@@ -75,7 +75,7 @@ cd github-fundations
 gh repo clone Andresmup/github-fundations    
 ```
 ## STATUS
-Git status shows you what files will or not be commited
+Git status shows you what files will or not be commited. Also known as files tracked and untracked
 
 ```sh
 git status
@@ -92,7 +92,7 @@ Can staged a specific file with ```add Readme.md```
 
 ## RESET
 Reset allows to move Staged changes to be unstaged.
-This is a useful to revert all files,for not to be commited.
+This is a useful to revert all files, for not to be commited.
 
 ```sh
 git add .
@@ -102,18 +102,19 @@ git reset
 
 ## COMMIT
 To commit code we can write git commit which will open up the commit edit message in editor of choice. 
-Make commit and commit messages without opening an editor
-```sh 
-git commmit -m "Message"
-```
-To make the commit and open the editor to complite the info required
+To make the commit and open the editor to complite the info required.
 ```sh
 git commit
 ```
 
-There is a way to add and commit in the same command by using -a flag.
+Make commit and commit messages without opening an editor use the `-m` flag.
+```sh 
+git commmit -m "Message"
+```
 
-The -a stands for all. This option automatically stages all modified files to be committed. If new files are added the -a option will not stage those new files. Only files that the Git repository is aware of will be committed.
+There is a way to add and commit in the same command by using `-a` flag.
+
+The `-a` stands for all. This option automatically stages all modified files to be committed. If new files are added the `-a` option will not stage those new files. Only files that the Git repository is aware of will be committed.
 ```sh
 git commit -a -m "Message"
 ```
@@ -145,6 +146,26 @@ git commit --amend --no-edit
 Other properties like author can be modify
 ```sh
 git commit --amend --author="andresmup <andresmunozpampillon@email.com>"
+```
+
+## STASH
+If we want to save a work in progress by add but without commiting it into the branch. We can "save" it by stashing. So we can bring it back by poping it
+
+```sh
+git add .
+git stash #"Save" our work in progress
+git stash pop #Bring it our work in progress back
+```
+The stash work in progress will be put into a list of changes that can be access with. 
+```sh
+git stash list
+```
+
+Another option is name our stash and bring back the last one
+```sh
+git add .
+git stash save name-of-stash
+git stash apply
 ```
 
 ## LOG
@@ -337,22 +358,3 @@ git merge <branch-name>
 > [!NOTE]  
 > If the two branches you're trying to merge both changed the same part of the same file, Git won't be able to figure out which version to use. The merge stops right before commit so you can resolve the conflicts manually (choosing which version use).
 
-## STASH
-If we want to save a work in progress by add but without commiting it into the branch. We can "save" it by stashing. So we can bring it back by poping it
-
-```sh
-git add .
-git stash #"Save" our work in progress
-git stash pop #Bring it our work in progress back
-```
-The stash work in progress will be put into a list of changes that can be access with. 
-```sh
-git stash list
-```
-
-Another option is name our stash and bring back the last one
-```sh
-git add .
-git stash save name-of-stash
-git stash apply
-```
