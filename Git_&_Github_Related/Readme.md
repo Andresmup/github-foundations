@@ -214,6 +214,9 @@ Tags are not pushed by default. To push it's.
 git push <remote name> --tags
 ```
 
+By using the flag `-u` when a push git estabish a follow relation between the two branches (local and remote).
+So in future operations such `git push` o `git pull` Git will automatically remember which remote and local branch they belong to.
+
 > [!NOTE]  
 > To be able to make push from a local repository into a remote one a key or authorization is required
 
@@ -247,4 +250,79 @@ Now the public key need to be added into your github account https://github.com/
 For test our connection run
 ```sh
 ssh -T git@github.com
+```
+
+### CLI
+Another way to make pushes, is by using github cli.
+
+The first step is install it.
+On Windows can be done downloading (and upgrading) it from https://cli.github.com/ or just by using
+
+```sh
+winget install --id GitHub.cli	
+winget upgrade --id GitHub.cli
+```
+
+On linux run
+```sh
+brew install gh
+brew upgrade gh
+```
+We have to login using the CLI, to authenticated the user it can be done via ssh or token.
+```sh
+gh auth login
+```
+The next step is clone the repository via cli, it will allow to push.
+
+```sh
+gh repo clone Andresmup/github-fundations
+git push
+```
+
+## BRANCHS
+
+Branching means you diverge from the main line of development and continue to do work without messing with that main line.
+
+To check the list of branchs can be done by 2 ways.
+```sh
+git branch
+git branch --list
+```
+
+To check the list of remotes branchs it's done by using `-a` flag.
+```sh
+git branch -a
+```
+
+Create new branch without checkout the current branch.
+```sh
+git branch <branch-name>
+```
+
+Checkout the branch.
+```sh
+git checkout <branch-name>
+```
+
+Create and checkout a new branch in one line of code by using `-b` flag.
+```sh
+git checkout -b <branch-name>
+```
+
+To rename the current branch it's done by using `-m` flag.
+```sh
+git branch -m <branch-new-name>
+```
+
+**Safe deletion of a branch (can't be done with unmerged changes)** it's done by using `-d` flag.
+```sh
+git branch -d <branch-new-name>
+```
+
+Force deletion (even if it has unmerged changes) can be done with `-D` flag.
+> [!WARNING]  
+> **This will permanently throw away all of the commits associated with a particular line of development**
+
+```sh
+git branch -D <branch-new-name>
 ```
