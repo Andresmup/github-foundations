@@ -119,8 +119,8 @@ git commit -a -m "Message"
 ```
 ## AMMEND
 There is a way to make minor changes to the last commit using the flag `--amend`.
-
-**If it has not been pusheed yet**
+> [!WARNING]  
+> **To use `--amend`, the last commit must not have been pushed**
 
 > Amended commits are actually entirely new commits and the previous commit will no longer be on your current branch.
 
@@ -212,4 +212,39 @@ git push <remote name> --force
 Tags are not pushed by default. To push it's.
 ```sh
 git push <remote name> --tags
+```
+
+> [!NOTE]  
+> To be able to make push from a local repository into a remote one a key or authorization is required
+
+### Login authorization
+When `git push` is executed if git do not detect any other method it will ask to open in the internet a browser a github page in which by login it validate our credentials to materialize the push action.
+
+### Token authorization
+> A personal access token need to be generated (PAT)
+
+This can be done in https://github.com/settings/personal-access-tokens/new, it can be specific for one or more repository, or apply to all. A expiration date has to be defined.
+
+And to be able to make a push it needs read and write permissions for:
+>Commit statuses, Contents, Metadata
+
+Now when git push it's execute (in VSC for example) can be authorize by passing the user name and the token as the password when the login is required. 
+
+### SSH
+When a repo is clone by ssh and we want to push back to the remote the changes. Or we just create a new local repo and want to push the work done into a new repote github repository. SSH can be used, it's a greate way to authenticated the pushes.
+
+
+We will have to create our SSH rsa key pair, it will ask where the ssh keys will be stored.
+```sh
+ssh-keygen -t rsa
+```
+Then copy the public key, getting with.
+```sh
+cat /your_directory/.ssh/id_rsa.pub
+```
+Now the public key need to be added into your github account https://github.com/settings/ssh/new, add a title and paste in.
+
+For test our connection run
+```sh
+ssh -T git@github.com
 ```
