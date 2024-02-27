@@ -118,6 +118,12 @@ The `-a` stands for all. This option automatically stages all modified files to 
 ```sh
 git commit -a -m "Message"
 ```
+
+It is posible to create an empty commit, useful as a placeholder using `--allow-empty` flag.
+```sh
+git commit -m "Empty commit " --allow-empty
+```
+
 ## AMMEND
 There is a way to make minor changes to the last commit using the flag `--amend`.
 > [!WARNING]  
