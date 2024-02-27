@@ -326,3 +326,33 @@ Force deletion (even if it has unmerged changes) can be done with `-D` flag.
 ```sh
 git branch -D <branch-new-name>
 ```
+
+## MERGE
+If we want to integrate the work (merge) developed in a branch into another (main) branch we do.
+
+```sh
+git checkout main
+git merge <branch-name>
+```
+> [!NOTE]  
+> If the two branches you're trying to merge both changed the same part of the same file, Git won't be able to figure out which version to use. The merge stops right before commit so you can resolve the conflicts manually (choosing which version use).
+
+## STASH
+If we want to save a work in progress by add but without commiting it into the branch. We can "save" it by stashing. So we can bring it back by poping it
+
+```sh
+git add .
+git stash #"Save" our work in progress
+git stash pop #Bring it our work in progress back
+```
+The stash work in progress will be put into a list of changes that can be access with. 
+```sh
+git stash list
+```
+
+Another option is name our stash and bring back the last one
+```sh
+git add .
+git stash save name-of-stash
+git stash apply
+```
