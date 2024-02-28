@@ -64,14 +64,182 @@ To perform actions on a github repository, it can to be set up as default.
 gh repo set-default
 ```
 
-### View (default)
-The default content of repository can be access and see using.
+### Create
+A repo can be created using CLI, completing the required fields throw the display nemu.
+```sh
+gh repo create
+```
+
+### View
+Display the description and the README of a GitHub repository.
+
+Any repository content can be access and see using.
+```sh
+gh repo view <repository_name>
+```
+
+With no argument, the repository for the current directory or the default repository content can be access and see using.
 ```sh
 gh repo view
 ```
 
-### View (any)
-Any repository content can be access and see using.
+Use the flag `-b` to see a specific branch of the repository.
 ```sh
-gh repo view <repository_name>
+gh repo view <repository_name> -b <branch_name>
+```
+
+Use the flag `-w` the repository is open on the browser.
+```sh
+gh repo view <repository_name> -w
+```
+
+### Clone
+A repository can be cloned localy by using 
+```sh
+gh repo clone <repo_name_or_URL>
+```
+
+### Delete
+If the current repo is required to be deleted use.
+```sh
+gh repo delete
+```
+
+Or any repository can be delete by passing the name
+```sh
+gh repo delete <repository_name>
+```
+
+To confirm deletion without prompting use flag `--yes`
+```sh
+gh repo delete <repository_name> --yes
+```
+
+### Edit
+A repository can be edited using de CLI.
+
+The repositories can be personal or from an organization (if you have permissions). To the define it set the `<owner_name>`
+
+A panel with the options to edit the repository will display with.
+```sh
+gh repo edit <owner_name>/<repository_name>
+```
+Some usefull flag are:
+
+Use `--allow-forking` in a organization repository
+
+```sh
+gh repo edit <owner_name>/<repository_name> --allow-forking
+``` 
+
+Use `--default-branch <name>` to set the default branch name for the repository
+```sh
+gh repo edit <owner_name>/<repository_name> --default-branch <branch_name>
+``` 
+
+With `--visibility <string> ` the visibility of the repository can be change the posibilies are `public,private,internal`
+```sh
+gh repo edit <owner_name>/<repository_name> --visibility <option_selected>
+``` 
+
+Multiple flags can be combined like, enable wiki in the repository with `--enable-wiki`, enable discussions in the repository with `--enable-discussions` and enable issues in the repository with `--enable-issues`.
+```sh
+gh repo edit <owner_name>/<repository_name> --enable-wiki --enable-discussions --enable-issues
+``` 
+
+To toggle a setting off, use the `--<flag>=false` syntax.
+```sh
+gh repo edit <owner_name>/<repository_name> --enable-auto-merge=false
+``` 
+
+### Sync
+A local repository can be syncronized from a remote repo.
+
+If it is not detailed the current reposity is the syncronized.
+```sh
+gh repo sync
+```
+Or it can be specified.
+```sh
+gh repo sync <repository_name>
+```
+If the syncronization is required in a specific branch use `-b <branch_name>` flag
+```sh
+gh repo sync -b <branch_name>
+```
+
+### Rename
+
+To rename a repository use by default it will apply to the current repository
+```sh
+gh repo rename <new_name> 
+```
+
+To use in any repostory use the flag `-R`.
+```sh
+gh repo rename <new_name> -R <owner_name>/<repo_name>
+```
+
+## GIST
+Gist can be access by cli, allowing to manage, create, delete and see this.
+
+### Clone
+A local copy of a remote gist can be done by cloning it with
+```sh
+gh gist clone <URL or ID>
+```
+
+### List 
+The gist from an account with the ID, descrition, files, visibily and update can be listed using.
+```sh
+gh gist list
+```
+
+### View 
+To see a gist locally (without cloning) use
+```sh
+gh gist view <ID>
+```
+
+To open the gist in the web browser use the `-w` flag
+```sh
+gh gist view <ID> -w
+```
+
+## LABEL
+The CLI allows to see, work and edit with labels.
+
+### List
+To see the current list of labels use.
+```sh
+gh label list
+```
+
+### Create
+To create a new label. Must specify name for the label.
+
+The description is set with `-d` flag and color with `-c` (both are optional). If a color isn't provided, a random one will be chosen. The label color needs to be 6 character hex value.
+```sh
+gh label create <label_name> -d "description text" -c <hex_color>
+```
+
+### Edit
+
+To update name, description and/or color from an existing label use.
+The name is set with `-n` flag, description is set with `-d` and color with `-c`. Not allways all need to be updated. They can be choosen.
+```sh
+gh label edit <label_name> -n <new_label_name> -d "new description" -c <new_hex_color>
+```
+
+### Delete
+Delete a label from a repository
+```sh
+gh label delete <label_name>
+```
+
+## ORGANIZATION
+
+To see the list organizations for the authenticated user.
+```sh
+gh org list
 ```

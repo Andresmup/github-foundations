@@ -1,2 +1,2 @@
-# github-fundations
-Repo for tracking content related to github fundation certification
+# github-foundations
+Repo for tracking content related to github foundation certification
