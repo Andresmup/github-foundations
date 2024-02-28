@@ -70,7 +70,7 @@ gh repo set-default
 ```
 
 ### Create
-A repo can be created using CLI, completing the required fields throw the display nemu.
+A repo can be created using CLI, completing the required fields through the display menu.
 ```sh
 gh repo create
 ```
