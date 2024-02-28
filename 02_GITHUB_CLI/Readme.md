@@ -16,7 +16,7 @@ Allows to:
 ## Check CLI installed
 The easiest way to check if CLI is installed is by tiping `gh` into the terminal.
 
-## Install
+## INSTALL
 The first step is install it.
 
 ### Windows
@@ -45,12 +45,17 @@ Add the following to your devcontainer file:
 
 ## LOGIN
 We have to login using the CLI, to authenticated the user it can be done via ssh or token.
+
+> [!NOTE]  
+> To perform all the actions wanted make sure the (PAT) token has the permissions required or instead use SSH.
+
+This command will open the menu for login.
 ```sh
 gh auth login
 ```
 
 ## REPO
-Using the CLI tool actions on the repositories can be done
+Using the CLI tool actions on the repositories can be done, this are the most usefull.
 
 ### List
 To see a list with all the repositories use:
@@ -237,9 +242,128 @@ Delete a label from a repository
 gh label delete <label_name>
 ```
 
+## ISSUES
+The Github CLI allows to manage and see issues.
+
+### List
+The info show by the issue list is ID, title, labels, update. To check the open issues list in the current repository run.
+```sh
+gh issue list
+```
+
+The `-R` flags allow to work with a specific repository.
+```sh
+gh issue list -R <owner_name>/<repo_name>
+```
+
+By default only open issues are display, to see closed ones use `-s <state>` flag. Stated can be `closed, open, all`.
+```sh
+gh issue list -s close
+```
+
+Issues can be filtered by one or multiple labels using `-l` flag
+open, all`
+```sh
+gh issue list -l <label_name> -l <label_name> 
+```
+
+### Status
+Using status can be chech the issues assigned to you, the issues mentioning you and the issues opened by you in a repo.
+```sh
+gh issue status
+```
+
+
+### View
+Display the title, body, and other information about an issue.
+```sh
+gh issue view <ID>
+```
+
+Using the `-w` flag it will be opened in the browser.
+```sh
+gh issue view <ID> -w
+```
+
+### Close
+To close and issue using the cli follow the syntax. Where `-c` flag enable to leave a comment and `-r` to choose the reason which can be `completed,not planned`.
+```sh
+gh issue close <ID> -c "Comment" -r <reason>
+```
+
+## PULL REQUEST
+Working with GitHub pull requests using the CLI.
+
+By default it will be executed in the actual repo, it can be changed using the `-R` flag in any command detailing the `<owner_name>/<repo_name>`
+
+### List
+Info like ID, title, branch and created add will be display using.
+```sh
+gh pr list
+```
+
+By defualt only open PR are displayed. But using the `-s` flag this states can be selected `open,closed,merged,all`
+```sh
+gh pr list -s <state>
+```
+
+The filter can be done by head branch with `-H` flag.
+```sh
+gh pr list -H <branch_name>
+```
+
+### Status
+It's posible to check current status of open PR with.
+```sh
+gh pr status
+```
+
+### Create
+This command will open the menu for creating a PR from the current branch into main.
+
+The ID, name of the PR and branch will be display.
+```sh
+gh pr create
+```
+
+### Close
+For closing PR run the command using the syntax.
+```sh
+gh pr close <ID>
+```
+Optionally using the `-c` flag a comment can be writte and/or deleting the branch after closing `-d`.
+```sh
+gh pr close <ID> -c "Optional comment" -d
+```
+
+### Ready
+Allow to swich (mark) a PR as ready for review, or as draft (work in progress)
+
+If the PR is draft now, tranform in ready for review with.
+```sh
+gh pr ready <ID>
+```
+
+Using the `--undo` flag can convert a PR as draf (work in progress)
+```sh
+gh pr ready <ID> --undo
+```
+
+### Merge
+In order to accept and merge a PR the easiest way it's by using the next command, that will open the menu for merging a specific PR.
+```sh
+gh pr merge <ID>
+```
+
 ## ORGANIZATION
 
 To see the list organizations for the authenticated user.
 ```sh
 gh org list
+```
+
+## HELP
+To see info about a command or an specific options type.
+```sh
+gh help <commnad>
 ```
