@@ -28,9 +28,10 @@ If there is a hidden folder called `.git` it's tells your that this project is a
 ## START GIT
 For start a git local repo the are 2 main ways.
  - Creating a new empty repository on the local enviroment, using:
- - > git init
+   > git init
+
  - Creating a local copy from a github repository including the history, using: 
- - > git clone
+   > git clone
 
 ### Git Init 
 
