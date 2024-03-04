@@ -306,6 +306,31 @@ gh repo clone Andresmup/github-fundations
 git push
 ```
 
+## PULL
+The `git pull` command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
+
+Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows.
+
+> [!NOTE]  
+> The git pull command is actually a combination of two other commands, `git fetch` followed by `git merge`.
+
+Fetch the specified remote’s copy of the current branch and immediately merge it into the local copy. 
+```sh
+git pull <remote name>
+```
+
+The `--no-commit` flag fetches the remote content but does not create a new merge commit.
+```sh
+git pull --no-commit <remote name>
+```
+
+To integrate the remote branch with the local one via `git rebase` use.
+```sh
+git pull --rebase <remote name>
+```
+
+
+
 ## BRANCHES
 
 Branching means you diverge from the main line of development and continue to do work without messing with that main line.
