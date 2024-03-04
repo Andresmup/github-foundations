@@ -64,7 +64,7 @@ GraphQL enables developers to request precisely the data they need, preventing u
 
 This approach reduces the likelihood of over-fetching or under-fetching data, ensuring a more optimal use of bandwidth.
 
-It's an own sintax languaje. An example is requesting all your repo.
+Its has its own sintax languaje. An example is requesting all your repo.
 
 ```gql
 {
