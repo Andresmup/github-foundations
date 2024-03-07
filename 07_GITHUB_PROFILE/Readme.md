@@ -11,10 +11,10 @@ You can also set a status on your profile to provide information about your avai
 
 People who visit your profile can also see the following information:
 
- - Repositories and gists you own or contribute to. You can showcase your best work by pinning repositories and gists to your profile. For more information, see "Pinning items to your profile."
- - Repositories you've starred and organized into lists. For more information, see "Saving repositories with stars."
- - An overview of your activity in organizations, repositories, and teams you're most active in. For more information, see "Showing an overview of your activity on your profile."Badges and Achievements that highlight your activity and show if you use GitHub Pro or participate in programs like the Arctic Code Vault, GitHub Sponsors, or the GitHub Developer Program. For more information, see "Personalizing your profile."
- - Your pronouns if you've set them. For more information, see "Personalizing your profile.
+ - Repositories and gists you own or contribute to. You can showcase your best work by pinning repositories and gists to your profile.
+ - Repositories you've starred and organized into lists.
+ - An overview of your activity in organizations, repositories, and teams you're most active in. For more information, see "Showing an overview of your activity on your profile."Badges and Achievements that highlight your activity and show if you use GitHub Pro or participate in programs like the Arctic Code Vault, GitHub Sponsors, or the GitHub Developer Program.
+ - Your pronouns if you've set them. For more information.
  - Mutual connections you share with someone who is viewing your profile. The person viewing your profile can see which of the people they follow are also followed by you.
 
 ## PERSONALIZING
@@ -39,7 +39,7 @@ The icons that can be display are:
  - Security advisory credit
 
 
-### ACHIEVEMENTS
+### Achievements
 
 Achievements celebrate specific events and actions that happen on GitHub. They will appear as small badges listed in the sidebar of your profile.
 
@@ -66,7 +66,21 @@ Here it's a list of them (as beta feature maybe in the future more are added):
  - Arctic Code Vault Contributor: Contributed code to a repository in the 2020 GitHub Archive Program. Now unable to earn.
 
 > [!TIP]
-> Some Achievements not only have the base version, but also tiers. For example by earning more stars in a repo (16, 128, 512, 4096)
+> Some achievements not only have the base version, but also tiers. For example by earning more stars in a repo (16, 128, 512, 4096)
+
+### Pinning items
+
+You can pin gists and repositories to your profile so other people can quickly see your best work.
+
+You can pin a public repository if you own the repository or you've made contributions to the repository within the last year. Commits to forks don't count as contributions, so you can't pin a fork that you don't own. 
+
+You can pin any public gist you own.
+
+Pinned items include important information about the item, like the number of stars a repository has received or the first few lines of a gist. Once you pin items to your profile, the "Pinned" section replaces the "Popular repositories" section on your profile. You can reorder the items in the "Pinned" section. 
+
+> [!NOTE]  
+> You can select up to six repositories and gists, combined.
+
 
 ## CONTRIBUTIONS
 
@@ -95,7 +109,7 @@ On your profile page, certain actions count as contributions:
 If you use GitHub Enterprise Server and your enterprise owner enables unified contributions, you can send enterprise contribution counts to your GitHub.com profile. 
 
 
-### CContributions calendar
+### Contributions calendar
 Your contributions calendar shows your contribution activity.
 
 You can view contributions from specific times, just click on a day's square to show the contributions made during that 24-hour period. Press Shift and click on another day's square to show contributions made during that time span.
@@ -119,3 +133,71 @@ The contribution activity section includes a detailed timeline of your work, inc
 You can see your contributions over time by either clicking Show more activity at the bottom of your contribution activity or by clicking the year you're interested in viewing on the right side of the page.
 
 Important moments, like the date you joined an organization, proposed your first pull request, or opened a high-profile issue, are highlighted in your contribution activity.
+
+
+## ORGANIZATION'S PROFILE
+
+Your organization's profile page shows basic information about your organization.
+
+You can optionally choose to add a description, location, website, and email address for your organization, and pin important repositories. You can share information about how to engage with your organization by creating an organization profile README for both public users and members of the organization.
+
+> [!NOTE]
+> Organizations that use GitHub Enterprise Cloud can confirm their organization's identity and display a "Verified" badge on their organization's profile page by verifying the organization's domains with GitHub. 
+
+Members of your organization who are signed into GitHub, can select a member or public view of the README and pinned repositories when they visit your organization's profile page.
+
+> [!TIP]  
+> You can set up a public organization profile (for non members) and a private one (only organization members)
+
+Adding a public organization profile:
+ - If your organization does not already have a public `.github` repository, create a public `.github` repository.
+ - In your organization's `.github` repository, create a `README.md` file in the profile folder.
+
+Adding a member-only organization profile
+ - If your organization does not already have a `.github-private` repository, create a private repository called `.github-private`.
+ - In your organization's `.github-private` repository, create a `README.md` file in the profile folder.
+
+
+## PRIVATE PROFILE
+
+A private profile displays only limited information, and hides some activity.
+
+To hide parts of your profile page, you can make your profile private. This also hides your activity in various social features on GitHub.com. A private profile hides information from all users, and there is currently no option to allow specified users to see your activity.
+
+After making your profile private, you can still view all your information when you visit your own profile.
+
+> [!IMPORTANT]  
+> Private profiles cannot receive sponsorships under GitHub Sponsors. To be eligible for GitHub Sponsors, your profile cannot be private.
+
+
+### Differences between private and public profiles
+
+When your profile is private, the following content is hidden from your profile page:
+
+ - Achievements and highlights.
+ - Activity overview and activity feed.
+ - Contribution graph.
+ - Follower and following counts.
+ - Follow and Sponsor buttons.
+ - Organization memberships.
+ - Stars, projects, packages, and sponsoring tabs.
+ - Your pronouns.
+
+> [!NOTE]  
+> When your profile is private, some optional fields are still publicly visible, such as the README, biography, and profile photo.
+
+## PROFILE README
+
+You can share information about yourself with the community on GitHub.com by creating a profile README. GitHub shows your profile README at the top of your profile page.
+
+You decide what information to include in your profile README, so you have full control over how you present yourself on GitHub. 
+
+You can format text and include emoji, images, and GIFs in your profile README by using GitHub Flavored Markdown.
+
+### Prerequisites
+
+GitHub will display your profile README on your profile page if all of the following are true.
+ - You've created a repository with a name that matches your GitHub username.
+ - The repository is public.
+ - The repository contains a file named README.md in its root.
+ - The README.md file contains any content.
