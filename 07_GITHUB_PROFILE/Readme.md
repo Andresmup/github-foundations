@@ -11,11 +11,18 @@ You can also set a status on your profile to provide information about your avai
 
 People who visit your profile can also see the following information:
 
+ - Profile picture and bio, an profile image can be upload and a short bio written.
+ - User profile readme.
  - Repositories and gists you own or contribute to. You can showcase your best work by pinning repositories and gists to your profile.
  - Repositories you've starred and organized into lists.
- - An overview of your activity in organizations, repositories, and teams you're most active in. For more information, see "Showing an overview of your activity on your profile."Badges and Achievements that highlight your activity and show if you use GitHub Pro or participate in programs like the Arctic Code Vault, GitHub Sponsors, or the GitHub Developer Program.
- - Your pronouns if you've set them. For more information.
- - Mutual connections you share with someone who is viewing your profile. The person viewing your profile can see which of the people they follow are also followed by you.
+ - An overview of your activity in organizations, repositories, and teams you're most active in via a contributions graph <ins>(display your contributions over the past year)</ins> base on **commits, pull requests, issues and code review.**
+ - Your contribution activity which is a list with your recent activity.
+ - A list of Github Organizations you are part of.
+ - Badges and Achievements that highlight your activity and show if you use GitHub Pro or participate in programs.
+ - Your pronouns if you've set them.
+ - The repositories you have starrred
+ - Mutual connections you share with someone who is viewing your profile.
+ - The person viewing your profile can see which of the people they follow are also followed by you.
 
 ## PERSONALIZING
 You can share information about yourself with other GitHub users by setting a profile picture and adding a bio to your profile.
