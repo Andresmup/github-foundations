@@ -419,3 +419,57 @@ To add a math expression as a block, start a new line and delimit the expression
 
 
 Alternatively, you can use the <kbd>```math</kbd> code block syntax to display a math expression as a block. With this syntax, you don't need to use <kbd>$$</kbd> delimiters.
+
+### Alerts
+
+Alerts are a Markdown extension based on the blockquote syntax that you can use to emphasize critical information. On GitHub, they are displayed with distinctive colors and icons to indicate the significance of the content.
+
+To add an alert, use a special blockquote line specifying the alert type, followed by the alert information in a standard blockquote. Five types of alerts are available:
+
+```md
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+
+Will look like this:
+
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+---
+
+
+## DISABLING MARKDOWN RENDER
+
+When viewing a Markdown file, you can click <kbd>Code</kbd> at the top of the file to disable Markdown rendering and view the file's source instead.
+
+Disabling Markdown rendering enables you to use source view features, such as line linking, which is not possible when viewing rendered Markdown files.
