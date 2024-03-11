@@ -87,3 +87,94 @@ The are three main ways to create a repository, using the web browser, the CLI o
 10. Click Create repository.
 
 11. At the bottom of the resulting Quick Setup page, under "Import code from an old repository", you can choose to import a project to your new repository. To do so, click Import code.
+
+
+## USING A TEMPLATE
+
+You can generate a new repository with the same directory structure and files as an existing repository.
+
+You can create a template from an existing repository. Anyone with access to the template repository can create a new repository based on the template with the same directory structure, branches, and files.
+
+> [!NOTE]  
+> Creating a repository from a template is similar to forking a repository, but there are important differences:
+>  - A new fork includes the entire commit history of the parent repository, while a repository created from a template starts with a single commit.
+>  - Commits to a fork don't appear in your contributions graph, while commits to a repository created from a template do appear in your contribution graph.
+>  - A fork can be a temporary way to contribute code to an existing project, while creating a repository from a template starts a new project quickly.
+
+You can choose to include the directory structure and files from only the default branch of the template repository or to include all branches. Branches created from a template have unrelated histories, which means you cannot create pull requests or merge between the branches.
+
+## CREATE A TEMPLATE
+
+You can make an existing repository a template, so you and others can generate new repositories with the same directory structure, branches, and files.
+
+To create a template repository, you must create a repository, then make the repository a template.
+
+After you make your repository a template, anyone with access to the repository can generate a new repository with the same directory structure and files as your default branch.
+
+Your template repository cannot include files stored using Git LFS.
+
+The steps are:
+
+1. On GitHub.com, navigate to the main page of the repository.
+
+2. Under your repository name, click  Settings. If you cannot see the "Settings" tab, select the  dropdown menu, then click Settings.
+
+3. Select Template repository.
+
+
+## SECURITY
+
+Security researchers can assess the security settings of a public repository, suggest a security policy and report a vulnerability.
+
+Anyone can view a public repository's security settings, and contact the repository maintainers regarding security issues.
+
+Evaluating a public repository's security settings can help security researchers understand the repository's security posture. This information can help you decide whether to engage with the repository maintainers, for example, by reporting a vulnerability in the repository.
+
+If a repository is public, high level information about the repository's security settings is available to anyone.
+
+If you have admin permissions to the repository, and the repository is owned by an organization, you can see more detailed information about the repository's security settings through the security overview. 
+
+### Security features
+
+In the security overview tab of a repository (can also be found in the settings section) you can find the following features.
+
+#### Private repos:
+
+ - **Security policy:** Define how users should report security vulnerabilities for this repository
+ - **Security advisories:** View or disclose security advisories for this repository
+ - **Dependabot alerts:** Get notified when one of your dependencies has a vulnerability
+ - **Code scanning alerts:** *Advanced Security is only available for Organizations*
+
+#### Public repos:
+All the private features and:
+
+
+ - **Private vulnerability reporting:** Allow users to privately report potential security vulnerabilities
+ - **Code scanning alerts:** Automatically detect common vulnerability and coding errors *(available in all public repos)*
+ - **Secret scanning alerts:** Get notified when a secret is pushed to this repository
+
+
+
+### Suggesting a security policy for a repository
+
+If you do not have admin or security permissions for a public repository, you can still suggest a security policy to the repository maintainers if one doesn't already exist. The repository maintainers can then choose to accept or reject your suggestion. If the repository maintainers accept your suggestion, the security policy will be associated with the repository.
+
+1. On GitHub.com, navigate to the main page of the repository.
+2. Under the repository name, click Security.
+3. If the repository has a security policy, it will be displayed. If no security policy is associated with the repository, click Suggest a policy.
+4. A SECURITY.md file will be created in the repository's default branch. The file will contain a template for a security policy. You can edit the file to add your suggested security policy.
+5. When you are done, click Commit changes.
+6. Fill out the Commit changes dialog.
+  - Under "Commit message", enter a commit message.
+  - Optionally, under "Extended description", describe the changes being made.
+  - Select "Create a new branch for this commit and start a pull request"
+  - Click Commit changes.
+7. Click Create pull request.
+8. Optionally, leave a comment.
+9. Click Create pull request.
+
+
+> [!NOTE]  
+> In case you have the permissions it will only require to fill up and commit like any other adition of files into repositories.
+
+<ins>The security police can be access and will be render in the Security tab next like the readme in the root of the repo.</ins>
