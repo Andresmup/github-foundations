@@ -88,8 +88,14 @@ The are three main ways to create a repository, using the web browser, the CLI o
 
 11. At the bottom of the resulting Quick Setup page, under "Import code from an old repository", you can choose to import a project to your new repository. To do so, click Import code.
 
+## REPO TEMPLATES
 
-## USING A TEMPLATE
+Github Repo Template is a feature for public and private repos that allows you and other Github users to make a copy of the contents of the template repo to use as starting point of their own repo.
+
+A repository can be set up as template in the settings section.
+
+
+### Create a repo using a template
 
 You can generate a new repository with the same directory structure and files as an existing repository.
 
@@ -103,7 +109,7 @@ You can create a template from an existing repository. Anyone with access to the
 
 You can choose to include the directory structure and files from only the default branch of the template repository or to include all branches. Branches created from a template have unrelated histories, which means you cannot create pull requests or merge between the branches.
 
-## CREATE A TEMPLATE
+### Create a template
 
 You can make an existing repository a template, so you and others can generate new repositories with the same directory structure, branches, and files.
 
@@ -278,5 +284,101 @@ Only members with owner privileges for an organization or admin privileges for a
 > You can restore some deleted repositories to recover their contents. Anyone can restore deleted repositories that were owned by their own personal account. Organization owners can restore deleted repositories that were owned by the organization. 
 > 
 > **A deleted repository can be restored within 90 days, unless the repository was part of a fork network that is not currently empty.**
+
+
+## LARGE FILE STORAGE
+
+When creating source code archives, you can choose to include files stored using Git LFS in the archive.
+
+You can innclude Git LFS objects in archives. Git LFS usage in archives is billed at the same rate as usage with the client.
+
+You can choose whether Git Large File Storage (Git LFS) objects are included in source code archives, such as ZIP files and tarballs, GitHub creates for your repository.
+
+GitHub creates source code archives of your repository in the form of ZIP files and tarballs. People can download these archives on the main page of your repository or as release assets.
+
+By default, Git LFS objects are not included in these archives, only the pointer files to these objects. To improve the usability of archives for your repository, you can choose to include the Git LFS objects instead.
+
+To be included, the Git LFS objects must be covered by tracking rules in a .gitattributes file that has been committed to the repository.
+
+> [!NOTE]  
+> If you choose to include Git LFS objects in archives of your repository, every download of those archives will count towards bandwidth usage for your account. Each account receives 1 GiB per month of bandwidth for free, and you can pay for additional usage. 
+
+## LIMIT PUSHES
+
+You can limit how many branches and tags can be updated in a single push. Pushes will be rejected if they attempt to update more than the value defined.
+
+
+> Developers have had branches deleted from their repository when someone pushes changes with Git's <kbd>--mirror</kbd> option.
+
+> The <kbd>--mirror</kbd> option is potentially destructive because it makes the remote repository exactly match the local clone.
+
+> [!WARNING]  
+> When run by accident, if the remote has more branches or different data than the local clone, many branch deletes and force-pushes can happen at the remote without any warning. This is often embarrassing for the one who pushed and a big challenge to recover from.
+
+Then toggle the setting named Limit how many branches and tags can be updated in a single push as shown below. Set the number appropriately for your needs.
+
+The default maximum of 5 branch or tag updates allowed in one push.
+
+The minimum value is 2 since two branch updates are required by Git to rename a branch in a single push: delete branch and create branch.
+
+Lower numbers are more restrictive of which pushes are allowed, and higher numbers are less restrictive but have more potential for being destructive. 
+
+## ADD FILES
+
+To add a file you can do via Github UI:
+ - Multiple Text and Binary files can be uploaded
+ - New single text files can be created
+
+When creating files in places, you have a basic text editor.
+
+You can also created nested folder by typing a foward slash in the file name.
+
+> [!TIP]
+> When adding multiples files that you also need to edit, you can quickly use Github.dev (crtl + alt + . ) at no cost.
+
+Files that you add to a repository via a browser are limited to 25 MiB per file. You can add larger files, up to 100 MiB each, via the command line. 
+
+
+> [!NOTE]  
+> If a repository has any protected branches, you can't edit or upload files in the protected branch using GitHub.
+
+## CREATE BRANCHES
+
+The are many ways to create a branch using git and/or github.
+
+The first new branch you create will be based on the default branch. If you have more than one branch, you can choose to base the new branch on the currently checked out branch or the default branch.
+
+### Git command
+The easiest way to create a branch using git locally is with:
+
+```sh
+git chechout -b <branch_name> # The `-b` flag create and checkout the branch directly
+```
+
+To push it upstream:
+
+```sh
+git push -u origin <branch_name> # The `-u` flag is for --set-upstream
+```
+
+### Issues
+
+Branches can be created from Issues. 
+
+Branches connected to an issue are shown under the "Development" section in the sidebar of an issue. When you create a pull request for one of these branches, it is automatically linked to the issue. The connection with that branch is removed and only the pull request is shown in the "Development" section.
+
+### UI
+
+Branches can be directly created within Github UI
+
+You can only create a branch in a repository to which you have push access.
+
+From the file tree view on the left, select the branch dropdown menu, then click View all branches. You can also find the branch dropdown menu at the top of the integrated file editor. Select New branch.
+
+### Desktop
+
+You can always create a branch in GitHub Desktop if you have read access to a repository, but you can only push the branch to GitHub if you have write access to the repository.
+
+In the repository section, it the  branch tab, click on <kbd>New branch...</kbd>
 
 
