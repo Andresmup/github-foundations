@@ -382,3 +382,28 @@ You can always create a branch in GitHub Desktop if you have read access to a re
 In the repository section, it the  branch tab, click on <kbd>New branch...</kbd>
 
 
+## STARS
+
+Similar to bookmarking, it's a way to mark a repository as interesting or to keep track of it for reference.
+
+Stars are public and can be seen by everyone, often use as a measure of a project's popularity.
+
+You can star repositories and topics to keep track of projects you find interesting and discover related content in your news feed. You can star repositories and topics to discover similar projects on GitHub. When you star repositories or topics, GitHub may recommend related content on your personal dashboard.
+
+You can access yours stars in:
+> - https://github.com/stars
+> - https://github.com/USERNAME?tab=stars
+
+Starring a repository also shows appreciation to the repository maintainer for their work. Many of GitHub's repository rankings depend on the number of stars a repository has.
+
+
+### Who has starred a repository
+You can view everyone who has starred a public repository or a private repository you have access to.
+To view everyone who has starred a repository, add `/stargazers` to the end of the URL of a repository. 
+
+### Starred list
+
+Anyone can see repositories that you've starred with public lists. You can create public lists that appear on your stars pageat https://github.com/USERNAME?tab=stars.
+
+If you add a private repository to a list, then the private repository will only appear in your list for people with `read` access to the repository.
+
