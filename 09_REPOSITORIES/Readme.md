@@ -178,3 +178,105 @@ If you do not have admin or security permissions for a public repository, you ca
 > In case you have the permissions it will only require to fill up and commit like any other adition of files into repositories.
 
 <ins>The security police can be access and will be render in the Security tab next like the readme in the root of the repo.</ins>
+
+## MAINTAINING A REPO
+
+Some of the actions you can make in a repo are:
+
+### Rename
+
+You can rename your repo name <ins>(try to avoid because it can break external links and documentation pointing to a public repo).</ins>
+
+Repo names are scoped based on the personal or organizational account.
+
+When you rename a repository, all existing information, with the exception of project site URLs, is automatically redirected to the new name
+
+### Rename default branch
+
+You can choose the default branch for a repository. The default branch is the base branch for pull requests and code commits. 
+
+You can change the base branch (default branch). You can rename it, "main" is the unspoken best practice for naming your base branch.
+
+
+### Enable features
+
+You can opt-in-and-out some features for your Github Repo. Features will be appear in the Github repo navigation bar.
+
+Some of them are:
+ - Wikis: Wikis host documentation for your repository. GitHub Wikis is a simple way to let others contribute content. Any GitHub user can create and edit pages to use for documentation, examples, support, or anything you wish. *(Available for free publics repos, and privates in PRO, teams, Enterprise Cloud and Enterprise Server)*.
+ - Issues: Issues integrate lightweight task tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages. If you pass from enable to disable and decide to enable issues again in the future, any issues that were previously added will be available.
+   - Issue templates: Give contributors issue templates that help you cut through the noise and help them push your project forward.
+ - Sponsorships: Sponsorships help your community know how to financially support this repository. By enable it you can display a "Sponsor" button you add links to GitHub Sponsors or third-party methods your repository accepts for financial contributions to your project.
+ - Discussions: You can use GitHub Discussions in a repository as a place for your community to have conversations, ask questions, and post answers without scoping work in an issue.
+ - Projects: Projects on GitHub are created at the repository owner's level (organization or user) and can be linked to a repository's Projects tab. Projects are suitable for cross-repository development efforts such as feature work, complex product roadmaps or even Issue triage.
+
+
+## DANGER ZONE
+
+The Danger Zone contains actions you need to think twice about the cannot be undone.
+
+### Change repo visibility
+
+When you make a private repo to public:
+ - The code will be visible to everyone who can visit github.com
+ - Anyone can fork you repository
+ - All pushes rullsets will be disable
+ - Your changes will be published as activity
+
+When you make a public repo to private:
+ - Could permanently erase these counts by removing stars and watchers associated to users that will no longer have access to this repository:
+ - If you decide to make this repository public in the future, it will not be possible to restore these stars and watchers and this will affect its repository rankings.
+ - Dependency graph and Dependabot alerts will remain enabled with permission to perform read-only analysis on 
+ this repository. Any custom Dependabot alert rules will be disabled unless GitHub Advanced Security is enabled for this repository.
+ - Code scanning will become unavailable.
+ - Current forks will remain public and will be detached from this repository.
+
+### Disable branch protection rules
+
+Branch protect rules are strict workflow rules like disallowing anyone pushing to main. You can disable all protection rules temporarily eg. Quick fixes
+
+Disabling branch protection rules allows you to enforce branch and tag protections exclusively with Repository Rules.
+
+This action will disable:
+ - Branch protection rule enforcement
+ - Branch protection rule APIs
+
+
+### Transfer ownership
+
+Transfer this repository to another user or to an organization where you have the ability to create repositories.
+
+When you transfer a repository to a new owner, they can immediately administer the repository's contents, issues, pull requests, releases, projects (classic), and settings. You can also change the repository name while transferring a repository.
+
+When you transfer a repository, its issues, pull requests, wiki, stars, and watchers are also transferred. If the transferred repository contains webhooks, services, secrets, or deploy keys, they will remain associated after the transfer is complete. Git information about commits, including contributions, is preserved.
+
+### Archiving
+
+You can archive a repository to make it read-only for all users and indicate that it's no longer actively maintained. You can also unarchive repositories that have been archived.
+
+Irs recommend that you close all issues and pull requests, as well as update the README file and description, before you archive a repository.
+
+Once a repository is archived, you cannot add or remove collaborators or teams. Contributors with access to the repository can only fork or star your project.
+
+When a repository is archived, its issues, pull requests, code, labels, milestones, projects, wiki, releases, commits, tags, branches, reactions, code scanning alerts, comments and permissions become read-only.
+
+
+### Deleting
+
+You can delete any repository or fork if you're either an organization owner or have admin permissions for the repository or fork. Deleting a forked repository does not delete the upstream repository.
+
+> [!NOTE]  
+>  - Deleting a repository will permanently delete release attachments and team permissions. This action cannot be undone.
+>  - Deleting a private repository will delete all forks of the repository.
+
+
+Only members with owner privileges for an organization or admin privileges for a repository can delete an organization repository. If Allow members to delete or transfer repositories for this organization has been disabled, only organization owners can delete organization repositories.
+
+
+
+> [!IMPORTANT]  
+> You can restore some deleted repositories to recover their contents. Anyone can restore deleted repositories that were owned by their own personal account. Organization owners can restore deleted repositories that were owned by the organization. 
+> 
+> **A deleted repository can be restored within 90 days, unless the repository was part of a fork network that is not currently empty.**
+
+
