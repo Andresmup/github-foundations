@@ -407,3 +407,185 @@ Anyone can see repositories that you've starred with public lists. You can creat
 
 If you add a private repository to a list, then the private repository will only appear in your list for people with `read` access to the repository.
 
+## WATCHING REPOS
+
+Watching a repo allows you to stay informed about activities ocurring within a repo.
+If you watch a repo you can specify what level of notification you want:
+ - Participating and @mentions
+ - All activity
+ - Ignore
+ - Custom (Issues, Pull request, Releases, Discussions, Security Alerts)
+
+
+In your Github account you can specify how you want to be notified (On Github and/or email).
+
+To check the repositories you are watching:
+ - In the left sidebar, under the list of repositories, use the "Manage notifications" drop-down menu and click Watched repositories.
+ - Or directly in https://github.com/watching
+
+When your inbox has too many notifications to manage, consider whether you have oversubscribed or how you can change your notification settings to reduce the subscriptions you have and the types of notifications you're receiving.
+
+
+## FEATURE PREVIEWS
+
+Features preview allows you to enable or disable features that are in beta in you personal account.
+
+You can use feature preview to see products or features that are available in beta and to enable or disable each feature for your personal account.
+
+### Exploring beta releases with feature preview
+You can see a list of features that are available in beta and a brief description for each feature. Each feature includes a link to give feedback.
+
+1. In the upper-right corner of any page, click your profile photo, then click Feature preview.
+2. To view details for a feature, in the left sidebar, click the feature's name.
+3. Optionally, to the right of a feature's name, click Enable or Disable.
+
+## TAGS
+
+Tagging is used to capture a point in history to mmarked version release of your codebase.
+
+Github makes it easy to explore tagged versions of a Git repo. Remember that Tag is not specific to Github, its a Git feature.
+
+Tags are associated with commits, so you can use a tag to mark an individual point in your repository's history, including a version number for a release. 
+
+> [!NOTE]  
+> CI/CD pipelines may be configure to deploy on the presence of a new tag on production branch
+
+### Viewing repo tags on Github UI
+On GitHub.com, navigate to the main page of the repository.
+
+1. To the right of the list of files, click Releases.
+2. Screenshot of the main page of a repository. A link, labeled "Releases", is highlighted with an orange outline.
+3. At the top of the page, click Tags.
+
+### Git commands
+
+To check the list of tags use:
+```sh
+git tag
+```
+
+To tag a commit the command use is:
+```sh
+git tag 1.0.0 #Tag a commit with 1.0.0
+```
+
+To sign a tag, add `-s` to your `git tag` command:
+```sh
+git tag -s 1.0.0 # Creates a signed tag
+```
+
+A tag can be delete via:
+```sh
+git tag -d 1.0.0 #Delete tag 1.0.0
+```
+
+The codebase can be cheackout to a tag:
+```sh
+git checkout 1.0.0
+```
+
+Tags created can be pushed:
+```sh
+git push --tags
+```
+
+To delete a remote tag
+```sh
+git push --delete origin <tagname>
+```
+
+### Using Desktop
+You can use GitHub Desktop to create, push, and view tags. GitHub Desktop allows you to create annotated tags.
+
+By default, GitHub Desktop will push the tag that you create to your repository with the associated commit.
+
+To create a new Tag in Github Desktop:
+1. In the left sidebar, click History.
+2. Right-click the commit and click Create Tag....
+3. In the "Create a Tag" dialog window, type the name of the tag.
+4. Click Create Tag.
+
+
+To delete a tag:
+1. In the left sidebar, click History.
+2. Right-click the commit.
+3. If a commit has only one tag, click Delete Tag TAG NAME.
+   - If a commit has multiple tags, hover over Delete Tag... and then click the tag that you want to delete.
+
+> [!IMPORTANT]  
+> You can only delete tags associated with commits that have not yet been pushed.
+
+To view your tags in github desktop:
+1. In the left sidebar, click History.
+2. Click the commit.
+3. All tags associated with the commit are visible in that commit's metadata.
+
+> [!TIP]
+> GitHub Desktop displays an arrow  if the tag has not been pushed to the remote repository.
+
+
+## RELEASES
+Github releases allows you to create releases with releases notes and linked assets such as zip source or binaries for specific platforms.
+
+You can create a release to package software, along with release notes and links to binary files, for other people to use.
+
+Releases are deployable software iterations you can package and make available for a wider audience to download and use.
+
+Releases are based on Git tags, which mark a specific point in your repository's history. A tag date may be different than a release date since they can be created at different times. 
+
+Anyone with read access to a repository can view and compare releases, but only people with write permissions to a repository can manage releases.
+
+When viewing the details for a release, the creation date for each release asset is shown next to the release asset.
+
+GitHub will automatically include links to download a zip file and a tarball containing the contents of the repository at the point of the tag's creation.
+
+### Viewing releases
+
+1. On GitHub.com, navigate to the main page of the repository.
+2. To the right of the list of files, click Releases.
+3. At the top of the Releases page, click Releases.
+
+### Managing releases
+
+You can create releases to bundle and deliver iterations of a project to users.
+
+You can create new releases with release notes, @mentions of contributors, and links to binary files, as well as edit or delete existing releases. You can also create, modify, and delete releases by using the Releases API. 
+
+## PACKAGES
+
+Github Packages is a platform for hosting and managing packages, including containers and other dependencies.
+
+GitHub Packages is a software package hosting service that allows you to host your software packages privately or publicly and use packages as dependencies in your projects.
+
+GitHub Packages is available with GitHub Free, GitHub Pro, GitHub Free for organizations, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server 3.0 or higher.
+
+GitHub Packages combines your source code and packages in one place to provide integrated permissions management and billing, so you can centralize your software development on GitHub.
+
+GitHub Packages offers different package registries for commonly used package managers, such as npm, RubyGems, Apache Maven, Gradle, Docker, and NuGet. GitHub's Container registry is optimized for containers and supports Docker and OCI images.
+
+> [!NOTE]  
+> Github Actions can be used to build and the public packages to Github Packages
+
+### Viewing your published package
+
+You can view all of the packages you have published.
+
+1. On GitHub.com, navigate to the main page of the repository.
+2. In the right sidebar of your repository, click Packages.
+3. Search for and then click the name of the package that you want to view.
+
+
+### Deletion of packages
+On GitHub if you have the required access, you can delete:
+
+ - an entire private package
+ - an entire public package, <ins>if there's not more than 5000 downloads of any version of the package</ins>
+ - a specific version of a private package
+ - a specific version of a public package, <ins>if the package version doesn't have more than 5,000 downloads</ins>
+
+If the package have more than 5,000 downloads, contact GitHub Support portal to delete it.
+
+### Restoring delete packages
+On GitHub, you can also restore an entire package or package version, if:
+ - You restore the package within 30 days of its deletion.
+ - The same package namespace is still available and not used for a new package.
