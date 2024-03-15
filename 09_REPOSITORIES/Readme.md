@@ -670,3 +670,157 @@ Every Github Package has a Danger Zone options, which may be cause irreversible 
 
  - Change package visibility: Swich from Public to Private or viceversa.
  - Delete this package: Once this package is deleted, it will no longer be accessible. This action will delete the package. Versions of the package will no longer be accessible, and it will not appear in searches or package listings.
+
+
+ ## INSIGHTS
+
+For a Github Repo under the Insights tab you can gain a lots of statistical graphs about the repo.
+
+Repo insights:
+ - Pulse: Overview of recent activity (issues, pull request)
+ - Contributors: List contributors and their activity stats.
+ - Community Standards: Checks for essencial community health files.
+ - Commits: History of all commits in the repo.
+ - Code Frecuency: Graph of the code additions and deletions over time.
+ - Dependency Graph: Visualice code dependencies.
+ - Network: Shows fork relationships and variations.
+ - Forks: Number and links to repository forks.
+
+### Pulse
+You can use Pulse to see an overview of a repository's pull request, issue, and commit activity.
+
+You can view an overview of a repository's activity through Pulse. Pulse includes a list of open and merged pull requests, open and closed issues, and a graph showing the commit activity for the top 15 users who committed to the default branch of the project in the selected time period.
+
+Commit co-authors are included in the commit activity summary if their commits were merged into the repository's default branch and they're in the top 15 users who have contributed the most commits.
+
+If you want to see a detailed history of changes to a repository, you can use the activity view. 
+
+Pulse contains:
+ - Pull requests open/close ratio
+ - Issues open/close ratio
+ - Summary of activity
+ - Graph of top contributors
+ - List of merged pull request
+ - List of issue closed
+ - List of issue opened
+ - <ins>List of unresolved conversations</ins>
+
+### Contributors
+
+You can see who contributed commits to a repository and its dependencies.
+
+> [!NOTE]  
+> Certain contributor, commit, and code frequency insights are only available for repositories that have less than 10,000 commits.
+
+You can view the top 100 contributors to a repository in the contributors graph. Merge commits and empty commits aren't counted as contributions for this graph.
+
+Optionally, to view contributors during a specific time period, click, then drag until the time period is selected. The contributors graph sums weekly commit numbers onto each Sunday, so your time period must include a Sunday.
+
+Contributors contains:
+ - Graph of all commits over the time period
+ - Graph of specific contributions commits over the time period
+
+
+### Community standards
+
+A checklist of recommended community standards and how much a community profile has been completed.
+
+The graph will only show for repos that have community profiles. Community profiles are for open-source projects on Github.
+
+Repository maintainers can review their public repository's community profile to learn how they can help grow their community and support contributors.
+
+Contributors can view a public repository's community profile to see if they want to contribute to the project.
+
+The community profile checklist checks to see if a project includes recommended community health files, such as README, CODE_OF_CONDUCT, LICENSE, or CONTRIBUTING, in a supported location.
+
+If a project doesn't have one of the recommended files, you can click the associated Add button to draft and submit a file.
+
+### Commits
+
+You can see the changes to the content of a repository by analyzing the repository's commits, commit frequency, and content additions and deletions.
+
+> [!NOTE]  
+> Certain contributor, commit, and code frequency insights are only available for repositories that have less than 10,000 commits.
+
+You can see all commits made to a repository in the past year (excluding merge commits) in the Commit graph.
+
+The top graph shows commits for the entire year by week. The bottom graph shows the average number of commits by day of the week for the selected week.
+
+> [!IMPORTANT]  
+> The are 2 main graphs that can be seen here:
+> - Number of commits per week for the last 52 weeks (for a year)
+> - The average number of commits by day of the week for the selected week.
+
+
+### Code Frecuency
+
+The code frequency graph displays the content additions and deletions for each week in a repository's history.
+
+> [!IMPORTANT]  
+> The graph show the ammount of additions and deletions of code per month.
+
+### Dependency Graph
+
+You can use the dependency graph to identify all your project's dependencies. The dependency graph supports a range of popular package ecosystems.
+
+The dependency graph is a summary of the manifest and lock files stored in a repository and any dependencies that are submitted for the repository using the dependency submission.
+
+For each dependency, you can see the license information and vulnerability severity. You can also search for a specific dependency using the search bar. Dependencies are sorted automatically by vulnerability severity.
+
+The dependency graph is automatically generated for all public repositories. You can choose to enable it for forks and for private repositories.
+
+Dependency Graph contains:
+ - List of dependencies
+ - List of dependents
+ - Export Software Bills of Materials (SBOMs)
+
+Security and compilance teams increasingly request software bills of materials (SBOMs) to identify the open source components of their software projects, assess their vulnerability to emerging threats, and verify alignment with license policies.
+
+You can use the dependency graph to:
+
+ - Explore the repositories your code depends on, and those that depend on it. For more information, see "Exploring the dependencies of a repository."
+ - View and update vulnerable dependencies for your repository. For more information, see "About Dependabot alerts."
+ - See information about vulnerable dependencies in pull requests. For more information, see "Reviewing dependency changes in a pull request."
+
+
+### Network
+
+Use the network graph and forks list to understand fork networks.
+
+The network graph displays the branch history of the entire repository network, including fork branches. This graph is a timeline of the most recent commits, and shows up to 100 of the most recently pushed-to branches.
+
+The first row references the date and the first column references the branch owner. Use arrow keys or other keyboard shortcuts to more easily navigate the graph. They are provided in the “Keyboard shortcuts available” pop up under the graph.
+
+You can see older branches, click and drag within the graph.
+
+> [!IMPORTANT]  
+> Network Graph contains 100 most recently pushed forks. You can read the commits to determine the difference of these forks
+
+### Forks
+
+> [!IMPORTANT]  
+> Contains a list of filterable forks
+
+The forks page lists the forks of a repository. For each fork, you can see:
+
+ - how many times the fork has been starred
+ - the number of direct forks (of the fork)
+ - the number of open issues
+ - the number of open pull requests
+ - when the fork was last updated (that is, the last push to any branch)
+ - when the fork was created
+
+
+<ins>You can filter the list of forks to display active, inactive, starred, or archived forks, or to only display forks that have been updated within a specified time period (up to a period of five years).</ins>
+
+To view the most useful or most active forks, you can sort the list of forks by most starred forks or most recently updated forks, or by the number of open issues or open pull requests.
+
+If you want to preserve the filters you have selected, you can save your filter and sort selections as the default so that any forks page you view, in any repository, will be filtered the same way.
+
+
+> [!NOTE]  
+> Some filter and sort options are:
+> Filter the list to display forks updated within a specified time period, click Period, then choose a time period from the dropdown menu.
+> Filter the list to only display active, inactive, starred, or archived forks, click Repository type, then choose one or multiple options from the dropdown menu.
+> Sort the list by most starred forks, most recently updated forks, most open issues, or most open pull requests, click Sort, then choose an option from the dropdown menu.
+> To preserve the filter values you have selected as the default filters for any time you view a forks page, click Save Defaults. 
