@@ -820,7 +820,7 @@ If you want to preserve the filters you have selected, you can save your filter 
 
 > [!NOTE]  
 > Some filter and sort options are:
-> Filter the list to display forks updated within a specified time period, click Period, then choose a time period from the dropdown menu.
-> Filter the list to only display active, inactive, starred, or archived forks, click Repository type, then choose one or multiple options from the dropdown menu.
-> Sort the list by most starred forks, most recently updated forks, most open issues, or most open pull requests, click Sort, then choose an option from the dropdown menu.
-> To preserve the filter values you have selected as the default filters for any time you view a forks page, click Save Defaults. 
+>  - Filter the list to display forks updated within a specified time period, click Period, then choose a time period from the dropdown menu.
+>  - Filter the list to only display active, inactive, starred, or archived forks, click Repository type, then choose one or multiple options from the dropdown menu.
+>  - Sort the list by most starred forks, most recently updated forks, most open issues, or most open pull requests, click Sort, then choose an option from the dropdown menu.
+>  - To preserve the filter values you have selected as the default filters for any time you view a forks page, click Save Defaults. 
