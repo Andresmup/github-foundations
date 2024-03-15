@@ -824,3 +824,16 @@ If you want to preserve the filters you have selected, you can save your filter 
 >  - Filter the list to only display active, inactive, starred, or archived forks, click Repository type, then choose one or multiple options from the dropdown menu.
 >  - Sort the list by most starred forks, most recently updated forks, most open issues, or most open pull requests, click Sort, then choose an option from the dropdown menu.
 >  - To preserve the filter values you have selected as the default filters for any time you view a forks page, click Save Defaults. 
+
+
+### COMPARISON ISSUES, DISCUSSIONS AND PULL REQUESTS
+
+
+| Issues | Discussions | Pull Requests |
+| --- | --- | --- |
+| Tracking tasks, bugs, enhancements, and other actionable items | Facilitating conversations and Q&As about a wide range of topics related to the project | Proposing, reviewing and merging code changes into the codebase |
+| <ul><li>Often linked to code changes</li><li>**Can be linked to PR**</li></ul> | <ul><li>Categorized by topics</li><li>Can be "converted" to issue <ins>(just creates an issue with a soft link to it)</ins></li><li>**Not directly linked to code changes**</li></ul> | <ul><li>Directly linked to code changes </li><li>**Can be linked to Issues**</li></ul> |
+
+
+> [!IMPORTANT]  
+> When refering to Issues and Pull Request both pull from the same list of numbers.
