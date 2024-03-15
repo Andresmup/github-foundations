@@ -589,3 +589,84 @@ If the package have more than 5,000 downloads, contact GitHub Support portal to 
 On GitHub, you can also restore an entire package or package version, if:
  - You restore the package within 30 days of its deletion.
  - The same package namespace is still available and not used for a new package.
+
+
+### Create a package
+
+A quick example of a Docker container and how to upload it to Github Packages.
+
+In a local folder from repository (just create a repo on Github and pull it or push it from locally).
+
+Add a <kbd>Dockerfile</kbd> and just paste the following code lines
+
+```docker
+FROM python:3.7
+
+COPY ./scr /app
+
+WORKDIR /app
+
+CMD ["python", "main.py"]
+```
+
+Create a <kbd>scr</kbd> folder and create a <kbd>main.py</kbd> file on it with the following code
+
+```py
+print("hello from docker")
+```
+
+Now let's create a docker image.
+
+In the terminal use this command (with Docker opened) to build a container:
+```sh
+docker build -t <image_name>:0.0.1 . 
+```
+
+To test it (will show `"hello from docker"` in the terminal) use the command:
+```sh
+docker run -p 9000:8080 <image_name>:0.0.1  
+```
+
+### Login and push package
+
+A requirement is to create a Github Token (Classic) to push the docker image, follow this steps:
+
+> Settings -> Developer settings -> Personal Access Token -> Classic Token
+
+> [!NOTE]  
+> Mark the options write:packages and delete:packages
+
+Now lets login into Github to push a docker image in your packages.
+
+Lets create a connection to Github, use the command:
+```sh
+echo <TOKEN> | docker login --username <YOUR_USERNAME> --password-stdin ghcr.io
+```
+
+Now its time to push the lastest version of the docker image to Github Packages
+```sh
+docker push  ghcr.io/<YOUR_USERNAME>/<image_name>:latest
+```
+
+You can check your packages (or anyone public package) in https://github.com/USERNAME?tab=stars
+
+
+### Actions access
+You can connect a repository to a package on GitHub.com. 
+
+When you publish a package that is scoped to a personal account or an organization, the package is not linked to a repository by default. If you connect a package to a repository, the package's landing page will show information and links from the repository, such as the README. 
+
+To make this just:
+ - On your profile page, in the header, click the Packages tab
+ - Search for and then click the name of the package that you want to manage.
+ - Under your package versions, click Connect repository.
+ - Select a repository to link to the package, then click Connect repository.
+
+By connecting a repo with a packages you select a repository that can access the package using GitHub actions
+
+### Danger Zone
+
+Every Github Package has a Danger Zone options, which may be cause irreversible  efects.
+
+ - Change package visibility: Swich from Public to Private or viceversa.
+ - Delete this package: Once this package is deleted, it will no longer be accessible. This action will delete the package. Versions of the package will no longer be accessible, and it will not appear in searches or package listings.
