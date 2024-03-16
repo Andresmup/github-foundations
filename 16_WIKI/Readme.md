@@ -34,3 +34,22 @@ Here is an example of how to link other pages, by providing the page title as th
 > Remember:
 > - For public repos: the wiki is available to the public
 > - For private repos: only people with access to the repository can access it
+
+
+
+## CLONE
+
+A wiki can be cloned via HTTPS to edit the files locally and push upstream the results.
+
+## CREATE, EDIT AND DELETE
+
+Any wiki page can be created, edited or deleted. In the Github UI.
+
+> [!NOTE]  
+> The Home Page can not be deleted
+
+## OPTIONALS PARTS
+
+In a wiki the are 2 optional parts to the pages:
+- Footer: Which is define by a page name `_Footer`
+- Sidebar: Which is define by a page name `_Sidebar`
