@@ -280,6 +280,34 @@ When you create issue templates for your repository using the issue template bui
 
 <ins>Issue forms is the evolution of Issue Templates. You use a YAML formatted file to create Issue forms for stricter entry of issue information.</ins>
 
+With issue forms, you can create issue templates that have customizable web form fields. You can encourage contributors to include specific, structured information by using issue forms in your repository. Issue forms are written in YAML using the GitHub form schema. 
+
 Issue templates are helpful when you want to provide guidance for opening issues while allowing contributors to specify the content of their issues. If you want contributors to provide specific, structured information when they open issues, issue forms help ensure that you receive your desired information.
 
 With issue forms, you can create templates that have web form fields using the GitHub form schema. When a contributor opens an issue using an issue form, the form inputs are converted to a standard markdown issue comment. 
+
+
+### Issue forms and templates comparison
+
+The differences between GitHub issue templates and issue forms:
+
+ - Issue templates are text files that contain pre-written text that can be used to create new issues.
+   - They are typically used to provide a consistent format for issues, and to help contributors provide all of the information that is needed to resolve the issue.
+ - Issue forms are web forms that can be used to create new issues.
+   - They are typically used to collect more structured information from contributors, and to make it easier for contributors to provide the information that is needed to resolve the issue.
+
+Here is a table that summarizes the key differences between issue templates and issue forms:
+
+
+| Feature | Issue templates |Issue forms| 
+| --- | --- | ---| 
+| Format| Markdown| YAML| 
+| Customization	| Limited	| Extensive| 
+| Data collection| 	Basic| 	Structured| 
+| Ease of use| 	Easy to use for simple issues| More complex to use, but more powerful| 
+
+
+> [!NOTE]  
+> Ultimately, the best choice for your project will depend on your specific needs. If you need a simple way to provide a consistent format for issues, then issue templates are a good option.
+> 
+> If you need to collect more structured information from contributors, or if you want to make it easier for contributors to provide the information that is needed to resolve the issue, then issue forms are a better option.
