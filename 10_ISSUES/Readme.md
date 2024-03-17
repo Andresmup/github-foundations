@@ -311,3 +311,11 @@ Here is a table that summarizes the key differences between issue templates and 
 > Ultimately, the best choice for your project will depend on your specific needs. If you need a simple way to provide a consistent format for issues, then issue templates are a good option.
 > 
 > If you need to collect more structured information from contributors, or if you want to make it easier for contributors to provide the information that is needed to resolve the issue, then issue forms are a better option.
+
+
+## MILESTONES
+
+Millestone allow you to gruop multiple issues into and end goal which show completitions towards the goal for each closed issues.
+
+- You can associate one by one issues to milestones in the issue page by selecting the milestone in the auxiliar panel
+- You can associate multiple issues to milestones by click on the check box of the issue in the issue repository tab an selecting de milestone to be associated with
