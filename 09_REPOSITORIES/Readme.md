@@ -672,7 +672,7 @@ Every Github Package has a Danger Zone options, which may be cause irreversible 
  - Delete this package: Once this package is deleted, it will no longer be accessible. This action will delete the package. Versions of the package will no longer be accessible, and it will not appear in searches or package listings.
 
 
- ## INSIGHTS
+## INSIGHTS
 
 For a Github Repo under the Insights tab you can gain a lots of statistical graphs about the repo.
 
@@ -826,7 +826,7 @@ If you want to preserve the filters you have selected, you can save your filter 
 >  - To preserve the filter values you have selected as the default filters for any time you view a forks page, click Save Defaults. 
 
 
-### COMPARISON ISSUES, DISCUSSIONS AND PULL REQUESTS
+## COMPARISON ISSUES, DISCUSSIONS AND PULL REQUESTS
 
 
 | Issues | Discussions | Pull Requests |
@@ -837,3 +837,20 @@ If you want to preserve the filters you have selected, you can save your filter 
 
 > [!IMPORTANT]  
 > When refering to Issues and Pull Request both pull from the same list of numbers.
+
+
+## LABELS
+
+Github Labels are used to categorize issues, pull requests and discurssions.
+
+You can apply multiple Labels to a labeled item.
+
+Its an easy way to identify item visualy in the Github UI
+
+### Creating a label
+You can manage your labels or create new labels on the labels page for your repo.
+
+Its simple as provinding a:
+- Name
+- Description
+- Colour
