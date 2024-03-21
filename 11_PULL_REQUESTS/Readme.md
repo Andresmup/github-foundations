@@ -180,7 +180,7 @@ This type of permanent link will render as a code snippet only in the repository
 5. Navigate to the conversation where you want to link to the code snippet.
 6. Paste your permalink into a comment, and click `Comment`.
 
-## COMMITING CHANGES IN PR BRANCH FROM A FORL
+## COMMITING CHANGES IN PR BRANCH FROM A FORK
 
 You can commit changes on a pull request branch that was created from a fork of your repository with permission from the pull request creator.
 
