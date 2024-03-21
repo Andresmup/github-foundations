@@ -34,6 +34,24 @@ The will display the license choose on the Github repo page.
 
 The file in the repo will be listed as either (license.md, license, LICENSE.md or License.md )
 
+## GITHUB SECURES OPEN SOURCE SOFTWARE
+
+GitHub works hard to secure the open source software you use. We provide businesses with best practices to learn and leverage across their workflows. 
+
+GitHub offers various configuration options for projects to enhance security and streamline workflows. These options include:
+
+- GitHub Advisory Database, Vulnerable Dependency Alerts, and Dependabot: GitHub provides tools that utilize data from GitHub Security Advisories and the National Vulnerability Database (NVD) to identify vulnerabilities in open source code. Dependabot automates the creation of pull requests for known vulnerabilities, facilitating quick deployment of security fixes.
+- CVE Numbering Authority (CNA) Integration: GitHub allows project maintainers to request CVE numbers for identified vulnerabilities and publish advisories directly on the platform, ensuring timely communication and awareness within the community.
+- Machine Learning Model for Security Release Detection: GitHub employs a machine learning model to identify security-related commits among the vast number of daily processes on the platform, streamlining the detection of security fixes.
+- Security Advisory API: GitHub's Security Advisory API provides access to security feeds and dependency upgrades, enabling integration into existing tools and workflows for effective vulnerability management.
+- GitHub Packages: GitHub Packages offers a centralized repository for managing public and private packages securely, providing detailed information and facilitating trust and collaboration within the community.
+- Dependency Insights: GitHub offers dependency insights to help organizations understand their software dependencies, identify security vulnerabilities, and make informed decisions regarding dependency management.
+- Token Scanning: GitHub employs token scanning to detect sensitive information such as access credentials in code commits, preventing inadvertent leaks and proactively invalidating compromised credentials.
+- Activity Insights: GitHub provides activity insights to help organizations track development patterns, security vulnerabilities, and issue resolutions, enabling informed decision-making and proactive risk mitigation.
+- Platform Security and Compliance: GitHub ensures platform security and compliance with standards such as SOC II and FedRAMP low certification, safeguarding the integrity of hosted code and data.
+- GitHub Connect: GitHub Connect facilitates integration between GitHub Enterprise Cloud and GitHub Enterprise Server, enabling seamless collaboration between internal teams and the wider open-source community while maintaining security and compliance.
+- Extensible Platform for Security Tools: GitHub's extensible platform allows integration with leading security tools and services, empowering organizations to customize their security workflows and adapt to evolving threats effectively.
+
 ## SPONSORS
 Sponsorship payments are facilitated two ways:
 - Payments through Github on Github.com
