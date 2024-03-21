@@ -176,7 +176,7 @@ Repo for tracking content related to github foundation certification
 #### [Describe the benefits of the open source community](21_OPEN_SOURCE)
 - [Describe open source](21_OPEN_SOURCE#open-source)
 - [Describe GitHub Sponsors](21_OPEN_SOURCE#sponsors)
-- Describe how GitHub advances open source projects
+- [Describe how GitHub advances open source projects](21_OPEN_SOURCE#github-secures-open-source-software)
 - [Identify how to follow people (receive notifications, discover projects in their community)](21_OPEN_SOURCE#discovery)
 - [Explain how to follow organizations (receive notifications about their activity)](21_OPEN_SOURCE#follow-organizations)
 - [Describe the GitHub Marketplace and its purpose](21_OPEN_SOURCE#marketplace)
