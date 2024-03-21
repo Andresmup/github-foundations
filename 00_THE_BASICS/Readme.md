@@ -117,6 +117,80 @@ You can perform actions suchs as:
 > 
 > Forking a repository allows to freely experiment with changes without affecting the original project.
 
+## COMMIT
+
+A Git commit represents incremental changes to a codebase represented with a git tree (graph) at a specific time.
+
+A git commit contains:
+- Additions, modifications and deletion files
+- Additions and deletions of file contents
+- Not the whole files themselves
+
+Each commit has a SHA hash that acts as an ID
+
+> [!IMPORTANT]  
+> Git does not store the whole files in each commit but rather the state of changes. This greatly reduces the files sizes. To developers the files will appear whole.
+
+Components of a Git commit:
+- Commit Hash: A unique SHA-1 hash identifier to the commit
+- Author Information: The name and email of the person who made the commit
+- Commit Message: A description of what changes the commit contains
+- Timestamp: The date and time when the commit was made
+- Parent Commit Hash(es): The SHA-1 hash of the commit(s) this commit is based on
+- Snapshot of Content: A snapshot of the project at the time of the commit (not the actual files, but references to them)
+
+Commit messages are often written in a tool as its more convenient to quickly add, remote files and audit changes. 
+
+VSC (including the version for Codespaces and Github dev) has that ability via Source Control windows.
+
+Create a new commit containing the current contents of the index and the given log message describing the changes. The new commit is a direct child of HEAD, usually the tip of the current branch, and the branch is updated to point to it (unless no branch is associated with the working tree, in which case HEAD is "detached" as described in git-checkout).
+
+## BRANCH
+
+A Git branch its a divergence of the state of the repo.
+
+You can think of branches as being copies of a point in time that have been modified to be different.
+
+A Git branch is a separate line of development within a Git repository that allows users to work on features or fixes independently from the main codebase. Branches enable collaboration, experimentation, and isolation of changes before integrating them into the main code.
+
+You can have branches for:
+- Specific enviroments (staging, development, production)
+- Specific developers (andres, muñoz)
+- Per features (ml-prediction)
+- Per bug (hotflix-data-notloading)
+
+A common workflow for developers is to create a branch or a feature, and they need to push their branch upstream to the remote name origin.
+
+## REMOTE
+
+A git remote represents the reference to the remote location where a copy is hosted.
+
+Remote repository is a repository which is used to track the same project but resides somewhere else.
+
+The remotes entries are stored in `.git/github`. Notice remotes names can be reference.
+
+You can have multiple remotes entries for your git repo.
+`origin` as a remote name almost always seen for a repo. It indicates the central or golden repo everyone is working from and represents the source of truth.
+
+## UPSTREAM AND DOWNSTREAM
+
+| Upstream | Downstream |
+| --- | --- |
+| The repository to which we push changes | A repository that pulls or clones from another repositories |
+| Iis a copy of the upstream repository to which you have made changes. | Is the repository that your local repository is based on. |
+
+## GITHUB FLOW
+
+GitHub flow is a lightweight, branch-based workflow. The GitHub flow is useful for everyone, not just developers. It allow for multiple developers to work on a single repository. Follow GitHub flow to collaborate on projects.
+
+Following GitHub flow:
+- **Create a branch**: Create a branch in your repository. A short, descriptive branch name enables your collaborators to see ongoing work at a glance. By creating a branch, you create a space to work without affecting the default branch. Additionally, you give collaborators a chance to review your work.
+- **Make changes**: On your branch, make any desired changes to the repository. Commit and push your changes to your branch. Continue to make, commit, and push changes to your branch until you are ready to ask for feedback.
+- **Create a pull request**: Create a pull request to ask collaborators for feedback on your changes. Pull request review is so valuable that some repositories require an approving review before pull requests can be merged.
+**Address review comments**: Reviewers should leave questions, comments, and suggestions. Reviewers can comment on the whole pull request or add comments to specific lines or files. You can continue to commit and push changes in response to the reviews. Your pull request will update automatically.
+- **Merge your pull request**: Once your pull request is approved, merge your pull request. This will automatically merge your branch so that your changes appear on the default branch. 
+- **Delete your branch**: After you merge your pull request, delete your branch. This indicates that the work on the branch is complete and prevents you or others from accidentally using old branches.
+
 ## OCTOCAT
 
 Github's octocat is the platform's official mascot. The caracter is a hybrid of an octopus and a cat, symbolizes Github's friendly and engaging nature in the world of software development and collaboration.
