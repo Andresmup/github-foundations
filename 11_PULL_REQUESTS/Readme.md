@@ -17,6 +17,33 @@ Some goods practices:
  - If you're working in the shared repository model, **use a topic branch for your pull request**. While you can send pull requests from any branch or commit, with a topic branch you can push follow-up commits if you need to update your proposed changes.
  - Be very careful when force pushing commits to a pull request. Force pushing changes the repository history and can corrupt your pull request. **If other collaborators branch the project before a force push, the force push may overwrite commits that collaborators based their work on.**
 
+
+## REVIEWING PROPOSED CHANGES IN A PR
+
+In a pull request, you can review and discuss commits, changed files, and the differences (or "diff") between the files in the base and compare branches. You can review changes in a pull request one file at a time.
+
+</ins>A progress bar in the pull request header shows the number of files you've viewed. After reviewing as many files as you want, you can approve the pull request or request additional changes by submitting your review with a summary comment. <ins>
+
+
+> [!TIP]
+>  While reviewing the files in a pull request, you can leave individual comments on specific changes. After you finish reviewing each file, you can mark the file as viewed. This collapses the file, helping you identify the files you still need to review.
+
+Starting a review: 
+1. Under your repository name, click `Pull requests`.
+2. In the list of pull requests, click the pull request you'd like to review.
+3. On the pull request, click `Files changed`.
+    - You can change the format of the diff view in this tab by clicking `settings` and choosing the unified or split view. The choice you make will apply when you view the diff for other pull requests.
+    - You can also choose to hide whitespace differences. The choice you make only applies to this pull request and will be remembered the next time you visit this page.
+4. Optionally, filter the files to show only the files you want to review or use the file tree to navigate to a specific file. 
+5. Hover over the line of code where you'd like to add a comment, and click the `blue comment icon`. To add a comment on multiple lines, click and drag to select the range of lines, then click the `blue comment icon`.
+6. In the comment field, type your comment.
+7. Optionally, to suggest a specific change to the line or lines, click , then edit the text within the suggestion block.
+8. To comment directly on a file, to the right of the file, click  and type your comment.
+9. When you're done, click Start a review. If you have already started a review, you can click Add review comment.
+
+> [!NOTE]  
+> Before you submit your review, your line comments are pending and only visible to you. You can edit pending comments anytime before you submit your review. To cancel a pending review, including all of its pending comments, click **Review changes** above the changed code, then click **Abandon review**.
+
 ## CREATE PULL REQUESTS
 
 Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the default branch only contains finished and approved work.
@@ -125,6 +152,46 @@ When you comment you are submitting a review to be considered before a PR is bei
 
 Under Files Changed you can also apply a review on a very specific line of code.
 
+## PERMANENT LINK TO FILES
+
+> [!IMPORTANT]
+> When viewing a file on GitHub.com, you can press the <kbd>"y"</kbd> key to update the URL to a permalink to the exact version of the file you see.
+
+For a permanent link to the specific version of a file that you see, instead of using a branch name in the URL (i.e. the `main` part in the example above), put a commit id. This will permanently link to the exact version of the file in that commit.
+
+Replaces main with a specific commit id and the file content will not change.
+
+Looking up the commit SHA by hand is inconvenient, however, so as a shortcut you can type y to automatically update the URL to the permalink version. Then you can copy the URL knowing that anyone you share it with will see exactly what you saw.
+
+## PERMANENT LINK TO A CODE SNIPPET
+
+You can create a permanent link to a specific line or range of lines of code in a specific version of a file or pull request.
+
+This type of permanent link will render as a code snippet only in the repository it originated in. In other repositories, the permalink code snippet will render as a URL.
+
+1. On GitHub.com, navigate to the main page of the repository:
+2. Locate the code you'd like to link to:
+- To link to code from a file, navigate to the file.
+- To link to code from a pull request, navigate to the pull request and click `Files changed`. Then, browse to the file that contains the code you want include in your comment, and click View.
+3. Choose whether to select a single line or a range.
+- To select a single line of code, click the line number to highlight the line.
+- To select a range of code, click the number of the first line in the range to highlight the line of code. Then, hover over the last line of the code range, press <kbd>Shift</kbd>, and click the line number to highlight the range.
+4. To the left of the line or range of lines, click the three dots icon `...` In the drop-down menu, click `Copy permalink`.
+5. Navigate to the conversation where you want to link to the code snippet.
+6. Paste your permalink into a comment, and click `Comment`.
+
+## COMMITING CHANGES IN PR BRANCH FROM A FORL
+
+You can commit changes on a pull request branch that was created from a fork of your repository with permission from the pull request creator.
+
+You can only make commits on pull request branches that:
+- are opened in a repository that you have push access to and that were created from a fork of that repository
+- are on a user-owned fork
+- have permission granted from the pull request creator
+- don't have branch restrictions that will prevent you from committing
+
+Only the user who created the pull request can give you permission to push commits to the user-owned fork.
+
 ## CODEOWNERS
 
 Codeowners is a Github repo specific file to deine individuals or teams that are responsable for specific code in a repository.
@@ -148,6 +215,13 @@ The use-case depends on your team's workflow. They may prefer only a single comm
 ## REQUIRED REVIEWERS
 
 PR can have multiple required reviewers who must write a review that appoves the changes.
+
+If your repository requires reviews, pull requests must have a specific number of approving reviews from people with *write* or *admin* permissions in the repository before they can be merged.
+
+You can comment on a pull request, approve the changes, or request improvements before approving.
+
+> [!TIP]
+> You can find a pull request where you or a team you're a member of is requested for review with the search <kbd>qualifier review-requested:[USERNAME]</kbd> or <kbd>team-review-requested:[TEAMNAME]</kbd>
 
 > The review is expected -> The review with Approve is provided -> The changes are approved passing the check for the repo.
 
