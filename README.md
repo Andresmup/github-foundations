@@ -80,14 +80,14 @@ Repo for tracking content related to github foundation certification
 - [Describe a pull request](11_PULL_REQUESTS#pull-requests)
 - [Explain how to create a new pull request](11_PULL_REQUESTS#create-pull-requests)
 - [Describe the `base` and `compare` branches in a pull request](11_PULL_REQUESTS#base-and-compare)
-- Explain the relationship of commits on a pull request
+- [Explain the relationship of commits on a pull request](11_PULL_REQUESTS#commiting-changes-in-pr-branch-from-a-fork)
 - [Describe draft pull requests](11_PULL_REQUESTS#draft-pull-request)
-- Describe the purpose of the pull request tabs (conversation, commits, checks, files changed
-- [Identify how to link activity within a pull request]()
+- [Describe the purpose of the pull request tabs (conversation, commits, checks, files changed](11_PULL_REQUESTS#reviewing-proposed-changes-in-a-pr)
+- Identify how to link activity within a pull request
 - [Explain the different pull request statuses](11_PULL_REQUESTS#statuses)
-- Recognize how to comment on a posted link to a line or lines of code from a file
+- [Recognize how to comment on a posted link to a line or lines of code from a file](11_PULL_REQUESTS#permanent-link-to-files)
 - [Describe code review with a codeowners file](11_PULL_REQUESTS#codeowners)
-- [Explain the different options for providing a code review on a pull request (comment, approve, request changes, suggested changes)]()
+- [Explain the different options for providing a code review on a pull request (comment, approve, request changes, suggested changes)](11_PULL_REQUESTS#required-reviewers)
 
 #### [Discussions](13_DISCUSSIONS)
 - [Describe the difference between discussions and issues](09_REPOSITORIES#comparison-issues-discussions-and-pull-requests)
