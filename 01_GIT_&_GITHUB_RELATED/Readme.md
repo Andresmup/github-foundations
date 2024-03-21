@@ -380,6 +380,38 @@ Force deletion (even if it has unmerged changes) can be done with `-D` flag.
 git branch -D <branch-new-name>
 ```
 
+> [!NOTE]  
+> From Git version 2.23 onwards you can use git switch instead of git checkout to:
+
+Switch to an existing branch
+```sh
+git switch -D <branch-name>
+```
+
+Create a new branch and switch to it, using the `-c` or `-create` flag.
+```sh
+git switch -c <branch-new-name>
+```
+
+Return to your previously checked out branch using the `-`
+```sh
+git switch -
+```
+
+You can give the `-m` flag to the command, which would try a three-way merge.
+```sh
+git switch -m <branch-name>
+```
+
+### Checkout and Swich Branchs comparison
+
+| Difference | git switch | git checkout| 
+| --- | --- | --- |
+|versions | Only works with newer Git versions (2.23 and above) | Works with both older and new Git versions |
+| Search for a branch in the remote repository if it’s not found in the local repository | :heavy_check_mark: | :x: |
+| Capable of doing other things besides switching branches | :x: | :heavy_check_mark: |
+| Merge the current branch into another branch and switch to it | :heavy_check_mark: | :x: |
+
 ## MERGE
 If we want to integrate the work (merge) developed in a branch into another (main) branch we do.
 
