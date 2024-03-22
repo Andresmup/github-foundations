@@ -99,10 +99,10 @@ Repo for tracking content related to github foundation certification
 
 #### [Notifications](14_NOTIFICATIONS)
 - Describe how to manage notification subscriptions
-- Explain how to subscribe to notification threads
-- Describe how to find threads where you are at-mentioned
-- Identify the notification filtering options
-- Explain the different notification configuration options
+- [Explain how to subscribe to notification threads](14_NOTIFICATIONS#managing-subscriptions)
+- [Describe how to find threads where you are at-mentioned](14_NOTIFICATIONS#find-threats-where-your-are-mentioned)
+- [Identify the notification filtering options](14_NOTIFICATIONS#custom-workflow-for-triage-notifications)
+- [Explain the different notification configuration options](14_NOTIFICATIONS#notification-configuration-options)
 
 #### [Gists, Wikis, and GitHub Pages]()
 - [Explain how to create a GitHub gist](15_GIST#create-a-gist)
