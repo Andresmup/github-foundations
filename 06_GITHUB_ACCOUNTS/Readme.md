@@ -54,13 +54,13 @@ Each personal account uses either GitHub Free or GitHub Pro here are the main di
  - 2 GB Github Packages storage
  - 180 hs Github Codespaces core per month
  - 20 GB Github Codespaces per month
- - Advance tools and insights in private repos such
- - Required PR reviewers
- - Multiple PR reviewers
- - Protected branches
- - <ins>Code owners</ins>
- - Auto-link refences
- - Github Pages
+ - Advance tools and insights in private repos such:
+     - Required PR reviewers
+     - Multiple PR reviewers
+     - Protected branches
+     - **<ins>Code owners</ins>**
+     - Auto-link refences
+     - Github Pages
  - Wikis
  - Repository insight graphs
 
@@ -110,15 +110,15 @@ Each organization account uses either Free, Team or Enterprise* here are the mai
  - Github Support via email
  - 3000 min Github Actions per month
  - 2 GB Github Packages storage
- - Advance tools and insights in private repossuch
- - Required PR reviewers
- - Multiple PR reviewers
- - <ins>Draft PR</ins>
- - Team PR reviewers
- - Protected branches
- - <ins>Code owners</ins>
- - Auto-link refences
- - Github Pages
+ - Advance tools and insights in private repos such
+     - Required PR reviewers
+     - Multiple PR reviewers
+     - **<ins>Draft PR</ins>**
+     - Team PR reviewers
+     - Protected branches
+     - **<ins>Code owners</ins>**
+     - Auto-link refences
+     - Github Pages
  - Wikis
  - Repository insight graphs
  - Option to enable or disable Codespaces
