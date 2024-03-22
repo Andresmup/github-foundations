@@ -177,7 +177,7 @@ You can have multiple remotes entries for your git repo.
 | Upstream | Downstream |
 | --- | --- |
 | The repository to which we push changes | A repository that pulls or clones from another repositories |
-| Iis a copy of the upstream repository to which you have made changes. | Is the repository that your local repository is based on. |
+|  Is the repository that your local repository is based on. | Its a copy of the upstream repository to which you have made changes. |
 
 ## GITHUB FLOW
 
@@ -187,7 +187,7 @@ Following GitHub flow:
 - **Create a branch**: Create a branch in your repository. A short, descriptive branch name enables your collaborators to see ongoing work at a glance. By creating a branch, you create a space to work without affecting the default branch. Additionally, you give collaborators a chance to review your work.
 - **Make changes**: On your branch, make any desired changes to the repository. Commit and push your changes to your branch. Continue to make, commit, and push changes to your branch until you are ready to ask for feedback.
 - **Create a pull request**: Create a pull request to ask collaborators for feedback on your changes. Pull request review is so valuable that some repositories require an approving review before pull requests can be merged.
-**Address review comments**: Reviewers should leave questions, comments, and suggestions. Reviewers can comment on the whole pull request or add comments to specific lines or files. You can continue to commit and push changes in response to the reviews. Your pull request will update automatically.
+- **Address review comments**: Reviewers should leave questions, comments, and suggestions. Reviewers can comment on the whole pull request or add comments to specific lines or files. You can continue to commit and push changes in response to the reviews. Your pull request will update automatically.
 - **Merge your pull request**: Once your pull request is approved, merge your pull request. This will automatically merge your branch so that your changes appear on the default branch. 
 - **Delete your branch**: After you merge your pull request, delete your branch. This indicates that the work on the branch is complete and prevents you or others from accidentally using old branches.
 
