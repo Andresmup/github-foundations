@@ -41,7 +41,7 @@ mkdir /workspaces/tmp/new-project #Create a new folder for the project
 cd /worspaces/tmp/new-project #Move into the new folder
 git init #Start a new git repository
 touch Readme.md #Create a markdown file Readme.md
-code Readne.md #Open the Readme.md file and writte something
+code Readme.md #Open the Readme.md file and writte something
 git status #Uses git status to see what files (if there are) are track and untrack
 git add . #Track the changes to all files
 git add Readme.md #Track the changes to Readme.md only
@@ -385,7 +385,7 @@ git branch -D <branch-new-name>
 
 Switch to an existing branch
 ```sh
-git switch -D <branch-name>
+git switch <branch-name>
 ```
 
 Create a new branch and switch to it, using the `-c` or `-create` flag.
@@ -407,7 +407,7 @@ git switch -m <branch-name>
 
 | Difference | git switch | git checkout| 
 | --- | --- | --- |
-|versions | Only works with newer Git versions (2.23 and above) | Works with both older and new Git versions |
+| Versions | Only works with newer Git versions (2.23 and above) | Works with both older and new Git versions |
 | Search for a branch in the remote repository if it’s not found in the local repository | :heavy_check_mark: | :x: |
 | Capable of doing other things besides switching branches | :x: | :heavy_check_mark: |
 | Merge the current branch into another branch and switch to it | :heavy_check_mark: | :x: |
