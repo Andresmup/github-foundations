@@ -47,6 +47,59 @@ Github Projects offers more advance and flexible project management tools compar
 | Reporting | Enhance reporting features and insights | Basic reporting and tracking |
 | Integration | Deeper integration with Issues and Pull Requests | Basic integration with repositories |
 
+## PROJECT OPTIONS
+
+The configuration options for projects include creating a project, setting project descriptions and README, adding issues (including draft issues), creating custom fields (such as for tracking priority or iteration), grouping issues, saving views, adding board layouts, and configuring built-in automation workflows.
+
+To create a project, users can choose between organization or user projects, then select a template or start from scratch. Descriptions and READMEs can be added to communicate project purpose and instructions. Issues and pull requests can be added manually or through automation. Custom fields like iteration and priority can be created to organize and track tasks effectively. Views can be saved and shared to maintain alignment on priorities. Board layouts can be utilized to visualize project progress based on status. Finally, built-in automation workflows can be configured to streamline project management tasks like auto-adding issues and setting statuses.
+
+### Creating a project
+1. Choose between organization or user project.
+2. Select project type or template.
+3. Enter project name and create.
+
+### Setting your project description and README
+1. Navigate to your project settings.
+2. Add project description.
+3. Update project's README with relevant information.
+
+### Adding issues to your project
+1. Paste issue or pull request URLs into the project.
+2. Press Return to add.
+
+### Adding draft issues to your project
+1. Type draft issue idea and press Enter.
+2. Add body text if needed.
+
+### Adding an iteration field
+1. Click on the rightmost field header and select "New field."
+2. Type field name and select "Iteration."
+3. Specify iteration duration and save.
+
+### Creating a field to track priority
+1. Click on the rightmost field header and select "New field."
+2. Type field name and select "Single select."
+3. Add priority options (High, Medium, Low) and save.
+
+### Grouping issues by priority
+1. Click on the view menu icon and select "Group."
+2. Choose "Priority" to group issues.
+3. Move issues between groups to change priority.
+
+### Saving the priority view
+1. Click on the view menu icon and select "Save changes."
+2. Share the URL with your team to maintain alignment.
+
+### Adding a board layout
+1. Click "New view" and select "Board" layout.
+2. Specify status for each issue.
+3. Save changes and give the view a descriptive name.
+
+### Configure built-in automation
+1. Navigate to project workflows.
+2. Edit "Auto-add to project" workflow to filter items.
+3. Enable workflow to automatically add items.
+4. Add a workflow to set status to Todo when an item is added.
 
 ## WORKFLOWS
 
@@ -80,6 +133,32 @@ Projects insights lets you create charts about your Github Project
 ## MANAGING SAVED REPLIES
 
 When commenting on an issues or pull request, you can add a saved reply that you've already set up
+
+### Creating a saved reply
+If you frequently add the same comment over and over, you can create a saved reply.
+
+1. In the upper-right corner of any page, click your profile photo, then click `Settings`.
+2. In the "Code, planning, and automation" section of the sidebar, click `Saved replies`.
+3. Under "Add a saved reply", add a title for your saved reply.
+4. In the "Write" field, add the content you'd like to use for the saved reply.
+5. To review your reply, click `Preview`.
+6. Click Add saved reply.
+
+### Editing a saved reply
+You can edit the title and body of a saved reply.
+
+1. In the upper-right corner of any page, click your profile photo, then click `Settings`.
+2. In the "Code, planning, and automation" section of the sidebar, click  Saved replies.
+3. Under "Saved replies," next to the saved reply you want to edit, click <kbd>Pencil Icon</kbd>.
+4. Under "Edit saved reply," edit the title or content of the saved reply.
+5. Click Update saved reply.
+
+### Deleting a saved reply
+If you find that you're no longer using a saved reply, you can delete it.
+1. In the upper-right corner of any page, click your profile photo, then click `Settings`.
+2. In the "Code, planning, and automation" section of the sidebar, click `Saved replies`.
+3. Under "Saved replies", next to the saved reply you want to delete, click <kbd>X</kbd>.
+
 
 ## ASSIGNNING ISSUES AND PULL REQUESTS
 
