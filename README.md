@@ -140,12 +140,12 @@ Repo for tracking content related to github foundation certification
 #### [Manage your work with GitHub Projects](22_PROJECTS)
 - [Describe GitHub Projects](22_PROJECTS#projects)
 - [Explain the layout options for projects](#layout-options)
-- Describe the configuration options for projects
+- [Describe the configuration options for projects](22_PROJECTS#project-options)
 - [Explain the difference between projects and projects classic](22_PROJECTS#projects-vs-classic-projects-comparison)
 - [Explain the use of labels](09_REPOSITORIES#labels)
 - [Explain the use of milestones](10_ISSUES#milestones)
 - [Describe how to use and create template repos](09_REPOSITORIES#repo-templates)
-- Explain how to create, edit, and delete saved replies
+- [Explain how to create, edit, and delete saved replies](22_PROJECTS#managing-saved-replies)
 - [Describe the benefits of using a saved reply](Readme.md#managing-saved-replies)
 - [Recognize how to add assignees to issues and pull requests](22_PROJECTS#assignning-issues-and-pull-requests)
 - [Explain how to use project workflows](22_PROJECTS#workflows)
