@@ -1,10 +1,10 @@
 # PROJECTS
 
-Github Projects is a planning and tracking tool when on working on GIthub Repo.
+Github Projects is a planning and tracking tool when on working on Github Repo.
 
 A project has an adaptable view that can be changed at anytime between:
 - Spreadsheet (Table)
-- Taskboard(Board)
+- Taskboard (Board)
 - Roadmap (Roadmap)
 
 Projects directly integrates with Issues and Pull Requests.

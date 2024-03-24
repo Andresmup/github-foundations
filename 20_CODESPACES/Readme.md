@@ -1,11 +1,11 @@
 # CODESPACES
 
-Github Codespaces is a Cloud Developmnent Environment (CDE) integrated with your Github repo. An enviroment is know as a codespaces.
+Github Codespaces is a Cloud Development Environment (CDE) integrated with your Github repo. An enviroment is know as a codespaces.
 
 A codespaces run:
 - In Ubuntu Linux docker container
   - On a virtual machine
-    - Hosted and managed by Gihub
+    - Hosted and managed by Github
 
 Your codebase will be cloned into `/workspaces`
 
@@ -53,7 +53,7 @@ The options are:
 
 ## CREATE CODESPACES
 
-When you create a new codespacesyou choose:
+When you create a new codespaces you choose:
 - The repo
 - The branch
 - The region, can be:
@@ -69,11 +69,11 @@ When you create a new codespacesyou choose:
   - 16-Core (32GB Ram, 128GB) <ins>requires some payment mode linked to the account</ins>
 
 
-You can see all of your codespaces across all your repos at https://github.com/codespaces
+You can see all of your codespaces across all your repos at https://github.com/codespaces.
 
-You can start a Codespace in the Github UI repo via the <kbd>Code</kbd> section in the <kbd>Codespaces</kbd> tab
+You can start a Codespace in the Github UI repo via the <kbd>Code</kbd> section in the <kbd>Codespaces</kbd> tab.
 
-You can also use the Github CLI to create a codespace
+You can also use the Github CLI to create a codespace.
 ```sh
 gh codespace create
 gh codespace open
@@ -86,20 +86,20 @@ gh codespace open
 
 ```mermaid
 flowchart TD
-    B[Reopen] -->|Reopen an existing on| C[Running]
-    A[Create] -->|Create a new codespace| C[Running]
+    B[Reopen] -->|Reopen an existing on.| C[Running]
+    A[Create] -->|Create a new codespace.| C[Running]
     B[Reopen] --> D[Stop]
-    C[Running] -->|stopping freezes the state of
-    your workspace so you can use it later| D[Stop]
+    C[Running] -->|Stopping freezes the state of
+    your workspace so you can use it later.| D[Stop]
     D[Stop] -->|When you delete your workspace without commit
-     your changes they will be deleted as well| E[Deleting]
-    C[Running] -->|By defaul the time out its 30min
-    The codespace will stop to conserve the spend
-    Your changes will persist on the virtual machine| F[Timeouts]
+     your changes they will be deleted as well.| E[Deleting]
+    C[Running] -->|By defaul the time out its 30min.
+    The codespace will stop to conserve the spend.
+    Your changes will persist on the virtual machine.| F[Timeouts]
     C[Running] <-->|If you made changes in your dev container configuration
-    You need to rebuild your codespace for them to take effect| G[Rebuild]
-    C[Running] -->|VS Code browser: autosave by default
-    VS Code desktop: autosave needs to be turned on| H[Autosave]
+    you need to rebuild your codespace for them to take effect| G[Rebuild]
+    C[Running] -->|VS Code browser: autosave by default.
+    VS Code desktop: autosave needs to be turned on.| H[Autosave]
     H[Autosave] --> |Work will persist on the virtual machine as long its not deleted.
     To ensure no data loss, commit your changes| I[Saving]
     F[Timeouts] --> D[Stop]
@@ -130,7 +130,7 @@ Most VSC Marketplace extensions are available to install in VSC Browser for Gith
 ### Theme
 Github Codespaces should persist your VSC theme that you change in codespaces.
 
-User interface decorators or themes are personal choices that should no be put in the devcontainer.json file
+<ins>User interface decorators or themes are personal choices that should no be put in the devcontainer.json file</ins>
 
 ### Retention period and Timeout
 Under  Github Settings -> Codespaces you can change the timeout and retention period.
@@ -150,6 +150,17 @@ By enabling settings sync, your codespaces will be able to pull from VSC Setting
 
 VSC Settings Sync lets you share your VSC configuration such settings, keybindings, and installed extensions across your machines so the are always working with your favourite setup.
 
+To activate Sync Settings in a codespace:
+
+1. In VS Code, navigate to the bottom of the Activity Bar and click on the icon that looks like a silhouette or user profile.
+2. Click on "Sign in to Sync Settings."
+3. If the repository from which you created the codespace isn't in your list of trusted repositories, a browser window will pop up, asking you to authorize additional permissions for Settings Sync.
+    - If you trust the repository, click "Authorize" and close the browser window. The codespace will reload, showing your latest synced settings.
+    - Note: If you've disabled Settings Sync in your user preferences and have set your trusted repositories to include all repositories, you'll see a warning about enabling Settings Sync for all repositories. Review the warning and decide whether to enable Settings Sync for all repositories or revise your list of trusted repositories.
+4. To customize which settings you want to sync, open the Command Palette by pressing <kbd>Ctrl+Shift+P</kbd>, then type `Settings Sync` and select  `Settings Sync: Configure....`
+5. Choose the settings you want to sync, then click `OK.`
+
+
 ### Dotfiles
 
 You can configure Github Codespaces to use dotfiles from a specific repository that will be used for all future codespaces you start.
@@ -168,12 +179,11 @@ When you create a new codespace with this feature, Github does:
 
 ## DEEP LINK
 
-Github Codespaces Deep Link is an easy way to generate a sharable link that will launch a Codespace for a specific repo.
+Github Codespaces Deep Link is an easy way to generate a shareable link that will launch a Codespace for a specific repo.
 
-Here is an example
-https://codespaces.new/Andresmup/github-foundations
+Here is an example https://codespaces.new/Andresmup/github-foundations
 
-You will have to define branch, region and machine type before Creating it.
+You will have to define branch, region and machine type before creating it.
 
 The posible snippets are:
  - URL
@@ -215,9 +225,7 @@ You could use the `"postCreateCommand":` to install a bunch of programs on top o
 
 `"containerEnv":` is used to pass enviroment variables we want to pass to the running container 
 
-`"mounts":` allows you to map files and folders to your containers
-
-some use case are:
+`"mounts":` allows you to map files and folders to your containers; some use case are:
 - Bind Mount a Local Directory: Mount a local directory for direct file access
 - Mount a Docker Volume Persistent Storage: Use a docker volume data that persist across container rebuilds
 - Mount a Docker Socket: Allow the container to interact with the host's Docker daemon

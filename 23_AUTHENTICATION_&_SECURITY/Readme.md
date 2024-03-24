@@ -52,7 +52,7 @@ Repository owner has full control of the repository and can perform this actions
 
 ### Collaborator
 
-Collaborators can pull (read) the contents of the repository, push (write) changesto the respository and can perform this actions:
+Collaborators can pull (read) the contents of the repository, push (write) changes to the respository and can perform this actions:
 - Fork the repository
 - Rename a branch other than the default branch
 - Create, edit, and delete comments on commits, pull requests and issues in the repository

@@ -9,11 +9,13 @@ You can find Gists in the discover section https://gist.github.com/discover
 
 <ins>If you want you can pin a Gist in your profile to easily find it</ins>
 
+## PUBLIC VS SECRETS GISTS COMPARISON
+
 | Publics | Secrets |
 | :--- | :--- |
-| Are searcheable | Are not Searcheable |
+| Are searchable | Are not Searchable |
 | Shows up in Discover | Do not show in the Discover |
-| Cannot be changed to be private | Can be changed to public |
+| Cannot be changed to be secret | Can be changed to public |
 
 > [!IMPORTANT]  
 > Secret Gist are not private, and anyone with the URL can access it.

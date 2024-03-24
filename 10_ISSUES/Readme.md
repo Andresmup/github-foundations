@@ -18,7 +18,7 @@ Repository administrators can disable issues for a repository.
 
 Issues can be created in a variety of ways, so you can choose the most convenient method for your workflow. 
 
-Opening an Issue is straight forward.
+Opening an Issue is straight forward, lets see some cases.
 
 ### Github UI
 
@@ -103,7 +103,7 @@ You can use markdown to add formatting, links, emojis, and more.
 
 ### Add a task list
 
-It can be helpful to break large issues into smaller tasks, or to track multiple related issues in a single larger issue
+It can be helpful to break large issues into smaller tasks, or to track multiple related issues in a single larger issue.
 
 Add a task list to your issue by prefacing list items with <kbd>[ ]</kbd>. Reference existing issues by issue number or URL. 
 
@@ -193,7 +193,7 @@ Follow the steps:
 
 ## VIEW ALL YOUR ISSUES
 
-The <ins>Issues and Pull Request dashboards list the open issues and pull requests you've created.</ins> You can use them to update items that have gone stale, close them, or keep track of where you've been mentioned across all repositories—including those you're not subscribed to.
+The <ins>Issues and Pull Request dashboards list the open issues and pull requests you've created.</ins> You can use them to update items that have gone stale, close them, or keep track of where you've been mentioned across all repositories, including those you're not subscribed to.
 
 Your issue and pull request dashboards are available at the top of any page. On each dashboard, you can filter the list to find issues or pull requests you created, that are assigned to you, or in which you're mentioned. *You can also find pull requests that you've been asked to review.*
 
@@ -256,7 +256,7 @@ People with admin or owner permissions in the repository will additionally see t
 <ins>Issue Templates are markdown templates that are preloaded for new issues</ins>. They help ensure creating issues provide all the relevant and expected information.**You can create multiple issues templates to better improve the context of issues.**
 
 > [!IMPORTANT]  
-> The 3 default ones are:
+> The 3+1 default ones are:
 > - **Bug report** *Create a report to help us improve* (Get Started)
 > - **Feature Request** *Suggest an idea for this repository* (Get Started)
 > - **Custom Issue Template** *Describe the issue template's purpose here* (Get Started)

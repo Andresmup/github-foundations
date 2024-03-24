@@ -50,8 +50,9 @@ You can indicate emphasis with bold, italic, strikethrough, subscript, or supers
 | Strikethrough | ~~  ~~ | `~~This was mistaken text~~` |	~~This was mistaken text~~ |
 | Bold and nested italic | ** ** and _ _ |	`**This text is _extremely_ important**` | **This text is _extremely_ important** |
 | All bold and italic | *** *** | `***All this text is important***` | ***All this text is important*** |
-| Subscript | <sub> </sub> | `This is a <sub>subscript</sub> text` | This is a <sub>subscript</sub> text |
-| Superscript | <sup> </sup> | `This is a <sup>superscript</sup> text` | This is a <sup>superscript</sup> text |
+| Underline | `<ins>` `</ins>` | `This is a <ins>underline</ins> text` | This is a <ins>underline</ins> text |
+| Subscript | `<sub>` `</sub>` | `This is a <sub>subscript</sub> text` | This is a <sub>subscript</sub> text |
+| Superscript | `<sup>` `</sup>` | `This is a <sup>superscript</sup> text` | This is a <sup>superscript</sup> text |
 
 
 ### Quoting text or blockquote
@@ -68,14 +69,14 @@ You can call out code or a command within a sentence with single backticks <kbd>
 
 
 ### Quoting code block
-To start and the block put 3 <kbd>`</kbd> together.
+To start and the block put 3 <kbd>`</kbd> together  <kbd>```</kbd>.
 
 ```
 This is a block code
 ```
 
 > [!IMPORTANT]  
-> By writting the extension file in the first 3 <kbd>`</kbd> the bloc its colored if code mach the extension file.
+> By writting the extension file behind the first 3 <kbd>```</kbd> the block its colored if code mach the extension file.
 
 ```py
 print("This it python code" )
@@ -167,7 +168,7 @@ You can create a nested list by indenting one or more list items below another i
 
 ### Tables
 
-You can create tables with pipes | and hyphens -. Hyphens are used to create each column's header, while pipes separate each column. You must include a blank line before your table in order for it to correctly render.
+You can create tables with pipes <kbd>|</kbd> and hyphens <kbd>---</kbd>. Hyphens are used to create each column's header, while pipes separate each column. You must include a blank line before your table in order for it to correctly render.
 
 ```md
 | Header | Header |

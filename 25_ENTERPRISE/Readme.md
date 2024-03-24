@@ -17,7 +17,7 @@ You can individually enable these features:
 - Unified contributions
 
 ## INTERNAL REPOS
-Github Enterprise Cloud accounts have a third special type of Github Repo called **Internal**
+Github Enterprise Cloud accounts have a third special type of Github Repo called **Internal**.
 
 Some features are:
 - All enterprise members have read permissions to the internal repository
@@ -25,7 +25,7 @@ Some features are:
 - Unless your enterprise uses Enterprise Managed Users (EMUs), members of the enterprise can fork any internal repository owned by an organization in the enterprise
 
 > [!NOTE]  
-> Internal repositories are the default setting for all new repositories created in an organization owned by an enterprise account
+> Internal repositories are the default setting for all new repositories created in an organization owned by an enterprise account.
 
 ## ADVANCED SECURITY
 Github makes extra security features available to customers under a Github Advanced Security (GHAS) license.
@@ -45,7 +45,7 @@ Github Advanced Security license provides the following features:
 
 ## SAML AND SCIM
 
-<ins>SAML and SCIM is available for both Github Enterprise Cloud and Github Enterprise Server</ins>
+<ins>SAML and SCIM is available for both Github Enterprise Cloud and Github Enterprise Server</ins>.
 
 **Security Assertion Markup Language (SAML)**: is an open standard for exchanging authentication and authorization between an identity provider and a service provider. An important use case for SAML is Single-Sing-On via web browser.
 
@@ -58,4 +58,4 @@ In a resume:
 
 
 > [!NOTE]  
-> They can both complement each other in an ecosystem where you need both federated identity for authentification and a standarized way to manage user accounts across various systems
+> They can both complement each other in an ecosystem where you need both federated identity for authentification and a standarized way to manage user accounts across various systems.

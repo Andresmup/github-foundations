@@ -88,7 +88,7 @@ Here it's a quick comparison between Rest API and GraphQL API in Github.
 
 | Info| Rest API | GraphQL API |
 | ------------- |------------- | ------------- |
-| Design Philosophy | Resource-based, different endpoints per resource | Single endpoint, query for precise data requets |
+| Design Philosophy | Resource-based, different endpoints per resource | Single endpoint, query for precise data request |
 | HTTP Methods | Uses GET, POST, PUT, DELETE for operations | Mainly uses POST for all operations |
 | Data Fetching | Multiple request for related data | Single request for complex, related data |
 | Over/Under-fetching | Can have over-fetching or under-fetching | Precice data fetching, no over/under-fetching |

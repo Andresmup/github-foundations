@@ -1,7 +1,7 @@
 # **GIT w/GITHUB BASICS**
 
 ## GIT CONFIG
-The first step when using git after installing it, is to set up email and username. This values are storage in a local file named git configfile
+The first step when using git after installing it, is to set up email and username. This values are storage in a local file named git config file
 
 The gitconfig file is what stores your global configurations for git such an email, name, editor and more
 
@@ -12,7 +12,7 @@ git config --list
 
 When you first install Git on a machine you are suppose to set up your name and email.
 ```sh
-git config --config user.name "AndresMP"
+git config --config user.name "Andresmup"
 git config --config user.email "andresmunozpampillon@gmail.com"
 ```
 
@@ -43,9 +43,9 @@ git init #Start a new git repository
 touch Readme.md #Create a markdown file Readme.md
 code Readme.md #Open the Readme.md file and writte something
 git status #Uses git status to see what files (if there are) are track and untrack
-git add . #Track the changes to all files
-git add Readme.md #Track the changes to Readme.md only
-git commit -m "Add Readme.md files" #Create a commit, which is a saved snapshot of the tracked files. This contains a message.
+git add . #If we want to track the changes to all files
+git add Readme.md #If we want to track the changes to Readme.md only
+git commit -m "Add Readme.md files" #Create a commit, which is a saved snapshot of the tracked files and contains a message.
 ```
 
 
@@ -59,24 +59,24 @@ cd /workspaces/tmp
 ```
 
 ```sh
-git clone https://github.com/Andresmup/github-fundations.git
-cd github-fundations
+git clone https://github.com/Andresmup/github-foundations.git
+cd github-foundations
 ```
 
 #### SSH
 
 ```sh
-git clone git@github.com:Andresmup/github-fundations.git
-cd github-fundations
+git clone git@github.com:Andresmup/github-foundations.git
+cd github-foundations
 ```
 
 #### CLI
 
 ```sh
-gh repo clone Andresmup/github-fundations    
+gh repo clone Andresmup/github-foundations    
 ```
 ## STATUS
-Git status shows you what files will or not be commited. Also known as files tracked and untracked
+Git status shows you what files will or not be commited. Also known as files tracked and untracked.
 
 ```sh
 git status
@@ -96,10 +96,10 @@ Reset allows to move Staged changes to be unstaged.
 This is a useful to revert all files, for not to be commited.
 
 ```sh
-git add .
-git reset
+git add . #Track all
+git reset #Untrack previous
 ```
->git reset will revert a git add
+> **git reset will revert a git add**
 
 ## COMMIT
 To commit code we can write git commit which will open up the commit edit message in editor of choice. 
@@ -122,7 +122,7 @@ git commit -a -m "Message"
 
 It is posible to create an empty commit, useful as a placeholder using `--allow-empty` flag.
 ```sh
-git commit -m "Empty commit " --allow-empty
+git commit -m "Empty commit" --allow-empty
 ```
 
 ## AMMEND
@@ -180,7 +180,7 @@ Show recent git commits to the git tree, with some info like commit hash, author
 ```sh
 git log
 ```
-The commit info can be compressed with
+The commit info can be compressed with the flag `--oneline`
 ```sh
 git log --oneline
 ```
@@ -403,7 +403,7 @@ You can give the `-m` flag to the command, which would try a three-way merge.
 git switch -m <branch-name>
 ```
 
-### Checkout and Swich Branchs comparison
+### Checkout and Switch Branchs comparison
 
 | Difference | git switch | git checkout| 
 | --- | --- | --- |

@@ -23,7 +23,7 @@ The are 2 versions of Github Copilot, one call Individuals and the other call Bu
 | Telemetry | :heavy_check_mark: | :x: |
 | Blocks suggestion matching public code | :heavy_check_mark: | :heavy_check_mark: |
 | Plugs right into your code editor | :heavy_check_mark: | :heavy_check_mark: |
-| Offers multile function suggestion | :heavy_check_mark: | :heavy_check_mark: |
+| Offers multiple function suggestion | :heavy_check_mark: | :heavy_check_mark: |
 | Organization-wide policy management | :x: | :heavy_check_mark: |
 | Excluded specified files | :x: | :heavy_check_mark: |
 | Audit logs | :x: | :heavy_check_mark: |

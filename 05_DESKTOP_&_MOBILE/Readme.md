@@ -54,7 +54,7 @@ While using Github Desktop to manage a local repo this are some of the common op
 | Accesibility | Accesible anywhere with internet | Accesible only on installed computer |
 | Repo management | Directly manage repositories online | Manage local copies of repositories |
 | Basic Git/Github operations | Perform Github operations like fork, star, watch | Simplified interface for commit, pull, push |
-| Colaboration | Direct collaboration tools like issues, PR, wiki | Focus on local repo management |
+| Collaboration | Direct collaboration tools like issues, PR, wiki | Focus on local repo management |
 | Advance Git features | Supports advanced features via commands | Simplyfied experience for basic features |
 | Integration with tools | Integrates with various online CI/CD tools | Limited to local Git tools |
 

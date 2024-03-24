@@ -4,11 +4,6 @@
 
 Version Control System (VCS) are design to track changes or revision to code.
 
-Git is a Descentralized VSC (DVSC), and it became very popular for many reasons including:
-- Full local history and complete a copy of the repo locally.
-- Straigthforward and efficient branching and merging.
-- Better perfomance, improve fault tolerance, flexible workflows, work fully offline.
-
 > [!TIP]
 > Version control normally represents revisions being represents as graph like structure. Some terms in use are tree, trunch and branches.
 
@@ -23,14 +18,22 @@ Developers can review project history to find out:
 
 VCSs give each contributor a unified and consistent view of a project, surfacing work that's already in progress. Seeing a transparent history of changes, who made them, and how they contribute to the development of a project helps team members stay aligned while working independently.
 
+### Distributed version control system
+
+Descentralized VSC (DVSC) became very popular for many reasons including:
+- Full local history and complete a copy of the repo locally.
+- Straigthforward and efficient branching and merging.
+- Better perfomance, improve fault tolerance, flexible workflows, work fully offline.
+
+> [!NOTE]  
+> In a distributed version control system, every developer has a full copy of the project and project history. Unlike once popular centralized version control systems, DVCSs don't need a constant connection to a central repository. 
+
 
 ### GIT 
 
 Git is a distributed version control system (DVSC).
 
 Each change of your code (git commit) can be captured and tracked throughout the history of your project (git tree)
-
-In a distributed version control system, every developer has a full copy of the project and project history. Unlike once popular centralized version control systems, DVCSs don't need a constant connection to a central repository. 
 
 In resume Git offers:
 - Git lets developers see the entire timeline of their changes, decisions, and progression of any project in one place. From the moment they access the history of a project, the developer has all the context they need to understand it and start contributing.
@@ -42,7 +45,7 @@ In resume Git offers:
 - Repository: Represents the logical container holding the codebase
 - Commit: Represents a change of data in the local repository
 - Tree: Represents the entiry history of a repo
-- Remote: A versión of your project hosted elsewhere, used for exchanging commits
+- Remote: A version of your project hosted elsewhere, used for exchanging commits
 - Branches: Divergent paths of development, allowing isolated changes
     - Main (Github) and Master (Git) are the most commnon names used for the default branch
 - Clone: Creates a complete local copy of the repository and merges them into your branch
@@ -58,7 +61,7 @@ In resume Git offers:
 
 ## VERSION CONTROL SERVICES (VCS)
 
-Version Control Services (VCS) are fully managed cloud servicies that host your version controlled repositories. These services ofter have addicional functionality going beyond just being a remote host you repos. Github is the most popular and often the only choice for VCS. Often we call these services "git providers"
+Version Control Services (VCS) are fully managed cloud servicies that host your version controlled repositories. These services often have addicional functionality going beyond just being a remote host you repos. Github is the most popular and often the only choice for VCS. Often we call these services "git providers"
 
 ### Github
 Github is a Version Controll Service that initially offered hosted managed remote git repositories and has expanded to provide other offerings around hosted codebases.
@@ -157,7 +160,7 @@ You can have branches for:
 - Specific enviroments (staging, development, production)
 - Specific developers (andres, muñoz)
 - Per features (ml-prediction)
-- Per bug (hotflix-data-notloading)
+- Per bug (hotflix-data-not-loading)
 
 A common workflow for developers is to create a branch or a feature, and they need to push their branch upstream to the remote name origin.
 

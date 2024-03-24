@@ -20,7 +20,7 @@ People who visit your profile can also see the following information:
  - A list of Github Organizations you are part of.
  - Badges and Achievements that highlight your activity and show if you use GitHub Pro or participate in programs.
  - Your pronouns if you've set them.
- - The repositories you have starrred
+ - The repositories you have starred
  - Mutual connections you share with someone who is viewing your profile.
  - The person viewing your profile can see which of the people they follow are also followed by you.
 
@@ -43,7 +43,7 @@ The icons that can be display are:
  - Pro
  - Security Bug Bounty Hunter
  - GitHub Campus Expert
- - Security advisory credit
+ - Security Advisory Credit
 
 
 ### Achievements

@@ -3,8 +3,8 @@
 In your Github account settings you have a Notifications tab to configure notifications options.
 
 Every notification allow 3 actions:
-- Mark as don
-- Dont get anymore alerts for it
+- Mark as done
+- Don't get anymore alerts for it
 - Bookmark or save for later
 
 ## FILTER OPTIONS
@@ -25,7 +25,7 @@ If someone mentions you in a thread that you can find these mention under the Me
 
 ## NOTIFICATION INBOX
 
-The notification inbox provides a chronological list of notification threads. This allow you to keep on top of all suscribed activities with associated Github repos.
+The notification inbox provides a chronological list of notification threads. This allow you to keep on top of all subscribed activities with associated Github repos.
 
 You can access it in [https://github.com/notifications](https://github.com/notifications)
 
@@ -73,13 +73,13 @@ You can see all your subscriptions under Notifications https://github.com/notifi
 
 > [!CAUTION]
 > Remember and not mix:
-> **Watching**: Its for repos, people, organizations
-> **Notification subscriptions**: Its for especific Pull Request and Issues
+> - **Watching**: Its for repos, people, organizations
+> - **Notification subscriptions**: Its for especific Pull Request and Issues
 
 
 ## NOTIFICATION SETTINGS
 
-Some important aspecto about the settings for notifications are:
+Some important aspect about the settings for notifications are:
 
 ### Default notification email
 Choose where you'd like emails to be sent. You can add more email addresses. Use custom routes to specify different email addresses to be used for individual organizations.

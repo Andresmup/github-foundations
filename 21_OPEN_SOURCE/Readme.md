@@ -17,7 +17,7 @@ Open source software has often have free community version which makes it easy f
 
 The Open Source Iniciative (OSI) is a non-profit organization, is the steward of Open Source Definition, the set of rules that define open source software.
 
-The OSI mantains a list of open source licenseing documents for all different use-case which are readably available for project owners to adopt.
+The OSI mantains a list of open source licensing documents for all different use-case which are readably available for project owners to adopt.
 
 The top 5 most popular open source licenses are:
 - MIT License: Known for its simplicity and permissiveness
@@ -30,13 +30,13 @@ The top 5 most popular open source licenses are:
 
 When creating a new repo (or before it) Github makes it easy to quickly add a selected open source license to your repo.
 
-The will display the license choose on the Github repo page.
+The license choose will display on the Github repo page.
 
 The file in the repo will be listed as either (license.md, license, LICENSE.md or License.md )
 
 ## GITHUB SECURES OPEN SOURCE SOFTWARE
 
-GitHub works hard to secure the open source software you use. We provide businesses with best practices to learn and leverage across their workflows. 
+GitHub works hard to secure the open source software. GitHub provides businesses with best practices to learn and leverage across their workflows. 
 
 GitHub offers various configuration options for projects to enhance security and streamline workflows. These options include:
 
@@ -75,9 +75,9 @@ Many open source Github repos are hosted or mirrored in Github. To search them j
 
 In explore:
 - Explore: Show repos that they found based on your interests
-- Topics: allows you to find repos for specific categories
-- Trendings: show you most popular repos
-- Collections: show curated lists and insight into burgeoning industries, topics, and communities.
+- Topics: Allows you to find repos for specific categories
+- Trendings: Show you most popular repos
+- Collections: Show curated lists and insight into burgeoning industries, topics, and communities.
 - Events: Allows to connect with the GitHub community at conferences, meetups, and hackathons around the world.
 
 ## FOLLOW ORGANIZATIONS
@@ -131,11 +131,11 @@ Forking allows to:
 
 A forked repo is indicated underneath's it repo name.
 
-You may prefer using a forked repo over the original. Some cases are when the original repo its abandon, and a fork become the go-to repo for the project
+You may prefer using a forked repo over the original. Some cases are when the original repo its abandon, and a fork become the go-to repo for the project.
 
-Forks help keep public projects alive, on the edge and collaborative
+Forks help keep public projects alive, on the edge and collaborative.
 
-Using network graph unde repo insights you can often find community solutions to bugs or missing features
+Using network graph unde repo insights you can often find community solutions to bugs or missing features.
 
 ## DISCOVERABLE REPOS
 

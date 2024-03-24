@@ -8,7 +8,7 @@ Repo for tracking content related to github foundation certification
 
 #### [Git and GitHub Basics](00_THE_BASICS)
 - [Describe version control](00_THE_BASICS#version-control-systems-vcs)
-- [Define distributed version control](00_THE_BASICS#git)
+- [Define distributed version control](00_THE_BASICS#Distributed-version-control-system)
 - [Describe Git](00_THE_BASICS#git)
 - [Describe GitHub](00_THE_BASICS#github)
 - [Explain the difference between Git and GitHub](00_THE_BASICS#comparison-git-vs-github)

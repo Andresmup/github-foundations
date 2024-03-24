@@ -5,7 +5,7 @@ A Wiki is a collaborative way to quickly create documentation with multiple nest
 A wiki would serve as a knowledge base for your repo or organization.
 
 To use wikis:
-> Go to repo settings -> Features -> Ckeck Wiki (Optionally restrict editing to collaborators only)
+> Go to repo settings -> Features -> Check Wiki (Optionally restrict editing to collaborators only)
 
 *Now you just can go to the Wiki tab of your repo and Create the first page.*
 

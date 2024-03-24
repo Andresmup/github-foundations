@@ -38,7 +38,7 @@ Within a Github Repo when you click into a file you can then easily navegate all
 
 Readme files are markdown files that provided documentation/instructional information.
 
-> [!TIP]  
+> [!NOTE]  
 > If you put your README.md (or readme.md, or Readme.md) file in your repository's hidden .github, root, or docs directory, GitHub will recognize and automatically surface your README to repository visitors, this will be rendered on the Github Repo page for each access.
 
 
@@ -46,7 +46,18 @@ Readme files are markdown files that provided documentation/instructional inform
 > If a repository contains more than one README file, then the file shown is chosen from locations in the following order: the .github directory, then the repository's root directory, and finally the docs directory.
 
 
-You can add a README file to a repository to communicate important information about your project. A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, communicates expectations for your project and helps you manage contributions.
+You can add a README file to a repository to communicate important information about your project.
+
+> [!TIP]  
+> To communicates expectations for your project and help to manage contributions you can include all of this following files:
+> - Readme
+> - License
+> - Citation file
+> - Contributions guidelines
+> - Code of conduct
+> - Scurity policy
+
+A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, .
 
 ### Auto-generated table of contents for README files
 
@@ -62,11 +73,11 @@ You can create a new repository on your personal account or any organization whe
 
 The are three main ways to create a repository, using the web browser, the CLI or desktop app. Let's dive into the browser options:
 
-1. In the upper-right corner of any page, select , then click New repository.
+1. In the upper-right corner of any page, select <kbd>+ ▼</kbd>, then click <kbd>New repository</kbd>.
 
-2. Other option its in the repository section of your profile, click in New.
+2. Other option its in the <ins>repository section</ins> of your profile, click in <kbd>New</kbd>.
 
-3. Optionally, to create a repository with the directory structure and files of an existing repository, select the Choose a template dropdown menu and click a template repository. You'll see template repositories that are owned by you and organizations you're a member of or that you've used before. 
+3. Optionally, to create a repository with the directory structure and files of an existing repository, select the choose a template dropdown menu and click a template repository. You'll see template repositories that are owned by you and organizations you're a member of or that you've used before. 
 
 4. Optionally, if you chose to use a template, to include the directory structure and files from all branches in the template, and not just the default branch, select Include all branches.
 
@@ -154,7 +165,6 @@ In the security overview tab of a repository (can also be found in the settings 
 #### Public repos:
 All the private features and:
 
-
  - **Private vulnerability reporting:** Allow users to privately report potential security vulnerabilities
  - **Code scanning alerts:** Automatically detect common vulnerability and coding errors *(available in all public repos)*
  - **Secret scanning alerts:** Get notified when a secret is pushed to this repository
@@ -229,17 +239,18 @@ When you make a private repo to public:
  - All pushes rullsets will be disable
  - Your changes will be published as activity
 
-When you make a public repo to private:
- - Could permanently erase these counts by removing stars and watchers associated to users that will no longer have access to this repository:
- - If you decide to make this repository public in the future, it will not be possible to restore these stars and watchers and this will affect its repository rankings.
+When you change a public repo to private:
+ - Could permanently remove stars and watchers associated to users that will no longer have access to this repository.
+    - If you decide to make the repository public in the future, it will not be possible to restore the stars and watchers and this will affect the repository ranking.
  - Dependency graph and Dependabot alerts will remain enabled with permission to perform read-only analysis on 
- this repository. Any custom Dependabot alert rules will be disabled unless GitHub Advanced Security is enabled for this repository.
+ this repository. 
+    - Any custom Dependabot alert rules will be disabled unless GitHub Advanced Security is enabled for the repository.
  - Code scanning will become unavailable.
  - Current forks will remain public and will be detached from this repository.
 
 ### Disable branch protection rules
 
-Branch protect rules are strict workflow rules like disallowing anyone pushing to main. You can disable all protection rules temporarily eg. Quick fixes
+Branch protect rules are strict workflow rules, by disallowing anyone pushing to main. You can disable all protection rules temporarily eg. Quick fixes
 
 Disabling branch protection rules allows you to enforce branch and tag protections exclusively with Repository Rules.
 
@@ -260,7 +271,7 @@ When you transfer a repository, its issues, pull requests, wiki, stars, and watc
 
 You can archive a repository to make it read-only for all users and indicate that it's no longer actively maintained. You can also unarchive repositories that have been archived.
 
-Irs recommend that you close all issues and pull requests, as well as update the README file and description, before you archive a repository.
+Its recommend that you close all issues and pull requests, as well as update the README file and description, before you archive a repository.
 
 Once a repository is archived, you cannot add or remove collaborators or teams. Contributors with access to the repository can only fork or star your project.
 
@@ -290,7 +301,7 @@ Only members with owner privileges for an organization or admin privileges for a
 
 When creating source code archives, you can choose to include files stored using Git LFS in the archive.
 
-You can innclude Git LFS objects in archives. Git LFS usage in archives is billed at the same rate as usage with the client.
+You can include Git LFS objects in archives. Git LFS usage in archives is billed at the same rate as usage with the client.
 
 You can choose whether Git Large File Storage (Git LFS) objects are included in source code archives, such as ZIP files and tarballs, GitHub creates for your repository.
 
@@ -334,9 +345,9 @@ When creating files in places, you have a basic text editor.
 You can also created nested folder by typing a foward slash in the file name.
 
 > [!TIP]
-> When adding multiples files that you also need to edit, you can quickly use Github.dev (crtl + alt + . ) at no cost.
+> When adding multiples files that you also need to edit, you can quickly use Github.dev <kbd>.</kbd> at no cost.
 
-Files that you add to a repository via a browser are limited to 25 MiB per file. You can add larger files, up to 100 MiB each, via the command line. 
+<ins>Files that you add to a repository via a browser are limited to 25 MiB per file. You can add larger files, up to 100 MiB each, via the command line.</ins>
 
 
 > [!NOTE]  
@@ -350,13 +361,15 @@ The first new branch you create will be based on the default branch. If you have
 
 ### Git command
 The easiest way to create a branch using git locally is with:
-
+```sh
+git switch -c <branch_name> # The `-c` flag create and switch the branch directly
+```
+In git previous versions to 2.23 you only can use:
 ```sh
 git chechout -b <branch_name> # The `-b` flag create and checkout the branch directly
 ```
 
 To push it upstream:
-
 ```sh
 git push -u origin <branch_name> # The `-u` flag is for --set-upstream
 ```
@@ -403,7 +416,7 @@ To view everyone who has starred a repository, add `/stargazers` to the end of t
 
 ### Starred list
 
-Anyone can see repositories that you've starred with public lists. You can create public lists that appear on your stars pageat https://github.com/USERNAME?tab=stars.
+Anyone can see repositories that you've starred with public lists. You can create public lists that appear on your stars page at https://github.com/USERNAME?tab=stars.
 
 If you add a private repository to a list, then the private repository will only appear in your list for people with `read` access to the repository.
 
@@ -441,7 +454,7 @@ You can see a list of features that are available in beta and a brief descriptio
 
 ## TAGS
 
-Tagging is used to capture a point in history to mmarked version release of your codebase.
+Tagging is used to capture a point in history. And to a mark version release of your codebase.
 
 Github makes it easy to explore tagged versions of a Git repo. Remember that Tag is not specific to Github, its a Git feature.
 
@@ -479,7 +492,7 @@ A tag can be delete via:
 git tag -d 1.0.0 #Delete tag 1.0.0
 ```
 
-The codebase can be cheackout to a tag:
+The codebase can be checkout to a tag:
 ```sh
 git checkout 1.0.0
 ```
@@ -578,10 +591,10 @@ You can view all of the packages you have published.
 ### Deletion of packages
 On GitHub if you have the required access, you can delete:
 
- - an entire private package
- - an entire public package, <ins>if there's not more than 5000 downloads of any version of the package</ins>
- - a specific version of a private package
- - a specific version of a public package, <ins>if the package version doesn't have more than 5,000 downloads</ins>
+ - An entire private package
+ - An entire public package, <ins>if there's not more than 5000 downloads of any version of the package</ins>
+ - A specific version of a private package
+ - A specific version of a public package, <ins>if the package version doesn't have more than 5,000 downloads</ins>
 
 If the package have more than 5,000 downloads, contact GitHub Support portal to delete it.
 
@@ -634,7 +647,7 @@ A requirement is to create a Github Token (Classic) to push the docker image, fo
 > Settings -> Developer settings -> Personal Access Token -> Classic Token
 
 > [!NOTE]  
-> Mark the options write:packages and delete:packages
+> Mark the options **write:packages** and **delete:packages**
 
 Now lets login into Github to push a docker image in your packages.
 
@@ -648,10 +661,10 @@ Now its time to push the lastest version of the docker image to Github Packages
 docker push  ghcr.io/<YOUR_USERNAME>/<image_name>:latest
 ```
 
-You can check your packages (or anyone public package) in https://github.com/USERNAME?tab=stars
+You can check your packages (or anyone public package) in https://github.com/USERNAME?tab=packages
 
 
-### Actions access
+### Actions enable by connecting to a repo
 You can connect a repository to a package on GitHub.com. 
 
 When you publish a package that is scoped to a personal account or an organization, the package is not linked to a repository by default. If you connect a package to a repository, the package's landing page will show information and links from the repository, such as the README. 
@@ -662,13 +675,14 @@ To make this just:
  - Under your package versions, click Connect repository.
  - Select a repository to link to the package, then click Connect repository.
 
-By connecting a repo with a packages you select a repository that can access the package using GitHub actions
+> [!IMPORTANT]  
+> By connecting a repo with a package you select. The repository can access the package using GitHub actions
 
 ### Danger Zone
 
 Every Github Package has a Danger Zone options, which may be cause irreversible  efects.
 
- - Change package visibility: Swich from Public to Private or viceversa.
+ - Change package visibility: Switch from Public to Private or viceversa.
  - Delete this package: Once this package is deleted, it will no longer be accessible. This action will delete the package. Versions of the package will no longer be accessible, and it will not appear in searches or package listings.
 
 
@@ -778,9 +792,9 @@ Security and compilance teams increasingly request software bills of materials (
 
 You can use the dependency graph to:
 
- - Explore the repositories your code depends on, and those that depend on it. For more information, see "Exploring the dependencies of a repository."
- - View and update vulnerable dependencies for your repository. For more information, see "About Dependabot alerts."
- - See information about vulnerable dependencies in pull requests. For more information, see "Reviewing dependency changes in a pull request."
+ - Explore the repositories your code depends on, and those that depend on it.
+ - View and update vulnerable dependencies for your repository.
+ - See information about vulnerable dependencies in pull requests.
 
 
 ### Network
@@ -803,10 +817,10 @@ You can see older branches, click and drag within the graph.
 
 The forks page lists the forks of a repository. For each fork, you can see:
 
- - how many times the fork has been starred
- - the number of direct forks (of the fork)
- - the number of open issues
- - the number of open pull requests
+ - How many times the fork has been starred
+ - The number of direct forks (of the fork)
+ - The number of open issues
+ - The number of open pull requests
  - when the fork was last updated (that is, the last push to any branch)
  - when the fork was created
 
@@ -829,10 +843,10 @@ If you want to preserve the filters you have selected, you can save your filter 
 ## COMPARISON ISSUES, DISCUSSIONS AND PULL REQUESTS
 
 
-| Issues | Discussions | Pull Requests |
+| Discussions | Issues | Pull Requests |
 | --- | --- | --- |
-| Tracking tasks, bugs, enhancements, and other actionable items | Facilitating conversations and Q&As about a wide range of topics related to the project | Proposing, reviewing and merging code changes into the codebase |
-| <ul><li>Often linked to code changes</li><li>**Can be linked to PR**</li></ul> | <ul><li>Categorized by topics</li><li>Can be "converted" to issue <ins>(just creates an issue with a soft link to it)</ins></li><li>**Not directly linked to code changes**</li></ul> | <ul><li>Directly linked to code changes </li><li>**Can be linked to Issues**</li></ul> |
+| Facilitating conversations and Q&As about a wide range of topics related to the project | Tracking tasks, bugs, enhancements, and other actionable items | Proposing, reviewing and merging code changes into the codebase |
+| <ul><li>Categorized by topics</li><li>Can be "converted" to issue <ins>(just creates an issue with a soft link to it)</ins></li><li>**Not directly linked to code changes**</li></ul> | <ul><li>Often linked to code changes</li><li>**Can be linked to PR**</li></ul> | <ul><li>Directly linked to code changes </li><li>**Can be linked to Issues**</li></ul> |
 
 
 > [!IMPORTANT]  
@@ -841,7 +855,7 @@ If you want to preserve the filters you have selected, you can save your filter 
 
 ## LABELS
 
-Github Labels are used to categorize issues, pull requests and discurssions.
+Github Labels are used to categorize issues, pull requests and discussions.
 
 You can apply multiple Labels to a labeled item.
 

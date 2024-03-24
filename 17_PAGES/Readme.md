@@ -31,8 +31,11 @@ GitHub Pages supports using custom domains, or changing the root of your site's 
 
 ## TYPES OF SITES
 
-There are three types of GitHub Pages sites: project, user, and organization. 
+There are three types of GitHub Pages sites:
+- Project
+- User
+- Organization. 
 
-Project sites are connected to a specific project hosted on GitHub. 
+<ins>Project sites are connected to a specific project hosted on GitHub</ins>.
 
-User and organization sites are connected to a specific account on GitHub.com.
+<ins>User and organization sites are connected to a specific account on GitHub.com</ins>.

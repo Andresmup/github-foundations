@@ -1,9 +1,7 @@
 # ADMINISTRATION
 
-
-
 ## MANAGING FEATURES
-Github repos have multiple features that can be enable or disable
+Github repos have multiple features that can be enable or disable:
 - Wiki
 - Issues
 - Sponsors
@@ -59,25 +57,25 @@ Branch protection rules are used to enforce certain workflows or requirements be
 > - Allow deletions
 
 ## SECURITY TAB
-In every repo the is a security tab that present a repository security checklist of security options to configure
+In every repo the is a security tab that present a repository security checklist of security options to configure.
 
 ### Security Policy
-Create a markdown file that explain how security vulnerabilites should be reported
+Create a markdown file that explain how security vulnerabilites should be reported.
 
 ### Security Advisories
-Privately discuss, fix and pushing information about security vulnerabilities in your public repository
+Privately discuss, fix and pushing information about security vulnerabilities in your public repository.
 
 ### Private vulnerability reporting
-Allow your community to privately report potencial security vulnerabilities to maintainers and repository
+Allow your community to privately report potencial security vulnerabilities to maintainers and repository.
 
 ### Dependabot alerts
 A bot that alerts you of vulnerabilities due to out-of-date dependencies. Dependabot can automatically create PRs to update dependencies for you to approve.
 
 ### Code scanning alerts
-Automatically detect common vulnerabilities and coding errors via GraphQL or third-party tools
+Automatically detect common vulnerabilities and coding errors via GraphQL or third-party tools.
 
 ### Secret scanning alerts
-Get notified when a secret is pushed to the repository
+Get notified when a secret is pushed to the repository.
 
 ## MANAGING COLLABORATORS
 Collaborators allow you to let other Github users have access to your repo based on the permission level you provide.
@@ -86,7 +84,7 @@ You just have to search their username to invite.
 
 The user need to accept the invite. Its best to share the link directly and manually remind them to accept. 
 
-You can access to the repo invitation in `https://github.com/<repo-owner>/<repo-name>/invitations`
+You can access to the repo invitation in `https://github.com/<repo-owner>/<repo-name>/invitations`.
 
 ## TEAM TAB
 An organization can group organization members in teams.

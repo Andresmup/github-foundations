@@ -12,7 +12,7 @@ Some features are:
 - Discusion voting
 - Conversation to issues
 - Notifications
-- Searcheable and Linkable
+- Searchable and Linkable
 - Github integration
 
 You have to turn it on under the Repo settings features -> A discussion tab will appear in the repo. Some default categories will be available.
@@ -22,7 +22,7 @@ You have to turn it on under the Repo settings features -> A discussion tab will
 
 When someone creates a discussion they need to choose a category.
 
-Github provides some categories by default but Github Repo owners can create ther own.
+Github provides some categories by default but Github Repo owners can create their own.
 
 When you create a new category you will choose a Discussion Format:
 - **Open ended discussion**: no voting of best answer, just open discussion
@@ -51,4 +51,4 @@ You can customize the look of a pinned discussion.
 You can "convert" a discussion into an Issue. In the discussion choose <kbd>create issue from discussion</kbd>.
 
 > [!NOTE]  
-> This is a new issue, just linked by a soft link to the discussion and prepopulate the issue info within. There is no real conection or relationship.
+> This is a new issue, just linked by a soft link to the discussion and prepopulate the issue info within. There is no real connection or relationship.

@@ -54,22 +54,20 @@ The are 2 types of personal access token.
  - Granted specific permissions.
  - Must have and expiry date.
  - Can only access resources owned by a single user or organization.
- - The repository access can be public repositories (read-only), all repositories
-This applies to all current and future repositories owned by the resource owner and select repositories.
+ - The repository access can be public repositories (read-only) or all repositories (applies to all current and future repos owned by the resource owner and select repositories).
 
 To generate it go to:
 >Settings -> Developer settings -> Personal Access Tokens -> Fine Grained Token -> Generate New Token
 
-Define a token name, expiration date, resource owner, repository access, permissions and copy the Token valus.
-
+Define a token name, expiration date, resource owner, repository access, permissions and copy the Token value.
 
 
 ### Classic Token
  - Less secure.
- - Legacy system may be still use clasic tokens.
+ - Legacy system may be still use classic tokens.
 
 > [!IMPORTANT]  
-> Not recommended for use, avoid using clasic token in new developments.
+> Not recommended for use, avoid using classic token in new developments.
 
 ### Use the Personal Access Token
 To check if there is any PAT already (locally or in codespaces) run.
