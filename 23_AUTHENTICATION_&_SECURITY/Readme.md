@@ -100,7 +100,7 @@ Github partner with some developers of identity management systems to provide a 
 
 These IdPs mostly provide authentication using SAML.
 
-Microsoft Entra ID (ex Azure AD) also offers OIDC for authentication.
+Microsoft Entra ID (ex Azure AD) also offers OCID for authentication.
 
 The IdP applications provision users with System for Cross-domain Identity Management (SCIM)
 

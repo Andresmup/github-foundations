@@ -46,9 +46,9 @@ Branch protection rules are used to enforce certain workflows or requirements be
 > - Require a PR before merging
 > - Require status checks to pass before merging
 > - Require conversation resolution before merging
+> - Require deployments to succeed before merging
 > - Require signed commits
 > - Require linear history
-> - Require deployments to succeed before merging
 > - Lock branch
 > - Do not allow bypassing the above settings
 > 
