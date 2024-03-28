@@ -223,6 +223,56 @@ Draft issues can have a title, text body, assignees, and any custom fields from 
 3.To add body text, click on the title of the draft issue. In the markdown input box that appears, enter the text for the draft issue body, then click Save.
 
 
+## FIELDS
+
+You can use text fields to include notes or any other freeform text in your project.
+
+### Text and number fields
+
+Text fields can be used in filters, for example: `field:"exact text"`. Text fields and item titles will also be used if you filter for text without specifying a field.
+
+### Date fields
+You can filter for date values using the YYYY-MM-DD format, for example: `date:2022-07-01`. 
+
+<ins>If your project makes use of date fields, you can use the roadmap layout to view items on a timeline.</ins>
+
+### Single select fields
+You can create single select fields with multiple options, each with a description and a color, that can be selected from a dropdown menu.
+
+You can filter by your single select fields by specifying the option, for example: `fieldname:option`.
+
+You can filter for multiple values by providing a comma-separated list of options, for example: `fieldname:option1,option2`
+
+Single select fields can contain up to 50 options.
+
+### Iteration fields
+You can create iterations to plan upcoming work and group items.
+
+You can create an iteration field to associate items with specific repeating blocks of time. 
+
+Iterations can be set to any length of time, can include breaks, and can be individually edited to modify name and date range.
+
+With projects, you can group by iteration to visualize the balance of upcoming work, use filters to focus on a single iteration, and sort by iteration.
+
+When you first create an iteration field, three iterations are automatically created. You can add additional iterations and make other changes on your project's settings page.
+
+<ins>If your project makes use of iteration fields, you can use the roadmap layout to view items on a timeline.</ins>
+
+### Tracks and Tracked by fields
+
+You can view the subtasks of the issues in your projects.
+
+You can enable the Tracks and Tracked by fields on your projects to see the relationships between your issues as you add subtasks in tasklists. 
+
+The Tracked by field can be used to group items, creating a view that clearly shows the subtasks of each issue and the work required to complete them. 
+
+You can also filter by the Tracked by field to display only items that are tracked by specific issues. Either start typing "tracked-by" and select an issue from the list or, if you know the repository and issue number, you can type the filter below in full. For example: `tracked-by:"<OWNER>/<REPO>#<ISSUE NUMBER>"`
+
+### Delete and rename fields
+
+You can delete and rename your custom fields under your repo project settings.
+
+
 ## WORKFLOWS
 
 Github built-in Projects Workflows allow you to automate what happens based on specific events.
