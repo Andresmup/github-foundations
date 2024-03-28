@@ -90,7 +90,7 @@ This activities includes:
 - Repositories
 
 ## MARKETPLACE
-Github Marketplace are apps that integrate with your Github repos to provide additional funtionality
+Github Marketplace are apps that integrate with your Github repos to provide additional functionality
 
 > [!NOTE]  
 > Apps can be free or pay
@@ -108,15 +108,15 @@ Inner source is organization and development best practices of non-open-source a
 
 Inner source is a strict guidelines but a loose strategy to establish an open source like culture within organizations.
 
-https://innersourcecommons.org provide several free structured resources to help undestand how to adopt Inner Source, to best define which path follow you can use the guide [explore-patterns](https://patterns.innersourcecommons.org/explore-patterns)
+https://innersourcecommons.org provide several free structured resources to help undestand how to adopt Inner Source, to best define which path follow you can use the guide [explore-patterns](https://patterns.innersourcecommons.org/explore-patterns).
 
 ## INNER SOURCE VS OPEN SOURCE COMPARISON
 
 | Feature | InnerSource | OpenSource |
 | --- | --- | --- |
 | Scope | Within an organization | Public global community |
-| Accessibily | Limited to company employees | Open to anyone |
-| Porpuse | Improve collaboration and efficiency internally | Share and collaborate on projects globally |
+| Accessibility  | Limited to company employees | Open to anyone |
+| Purpose | Improve collaboration and efficiency internally | Share and collaborate on projects globally |
 | Contribution | Employees of the organization | Anyone (developers, users, etc) |ç
 | Visibility | Code and discussions often private to the organization | Public available and visible |
 | Governance | Dictated by internal policies and culture | Usually governed by open source licenses and community rules |

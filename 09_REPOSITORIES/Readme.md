@@ -55,7 +55,7 @@ You can add a README file to a repository to communicate important information a
 > - Citation file
 > - Contributions guidelines
 > - Code of conduct
-> - Scurity policy
+> - Security policy
 
 A README, along with a repository license, citation file, contribution guidelines, and a code of conduct, .
 
