@@ -11,6 +11,32 @@ Projects directly integrates with Issues and Pull Requests.
 
 Project have build-in workflows to automate common actions.
 
+## ABOUT PROJECTS
+
+A project is an adaptable spreadsheet, task-board, and road map that integrates with your issues and pull requests on GitHub to help you plan and track your work effectively. 
+
+You can create and customize multiple views by filtering, sorting, grouping your issues and pull requests, visualize work with configurable charts, and add custom fields to track metadata specific to your team. 
+
+### Staying up-to-date
+
+<ins>Your projects are built from the issues and pull requests you add, creating direct references between your project and your work.</ins>
+
+> [!WARNING]  
+> Must remember:
+> - Information is synced automatically to your project as you make changes, updating your views and charts.
+> - This integration works both ways, so that when you change information about a pull request or issue in your project, the pull request or issue reflects that information. 
+
+### Adding metadata to your items
+You can use custom fields to add metadata to your issues, pull requests, and draft issues and build a richer view of item attributes.
+
+<ins>You’re not limited to the built-in metadata (assignee, milestone, labels, etc.) that currently exists for issues and pull requests.</ins>
+
+For example, you can add the following metadata as custom fields:
+- A date field to track target ship dates.
+- A number field to track the complexity of a task.
+- A single select field to track whether a task is Low, Medium, or High priority.
+- A text field to add a quick note.
+- An iteration field to plan work week-by-week, including support for breaks.
 
 ## LAYOUT OPTIONS
 A project is componsed of multiple views, you can add more views to your project.
@@ -51,7 +77,11 @@ Github Projects offers more advance and flexible project management tools compar
 
 The configuration options for projects include creating a project, setting project descriptions and README, adding issues (including draft issues), creating custom fields (such as for tracking priority or iteration), grouping issues, saving views, adding board layouts, and configuring built-in automation workflows.
 
-To create a project, users can choose between organization or user projects, then select a template or start from scratch. Descriptions and READMEs can be added to communicate project purpose and instructions. Issues and pull requests can be added manually or through automation. Custom fields like iteration and priority can be created to organize and track tasks effectively. Views can be saved and shared to maintain alignment on priorities. Board layouts can be utilized to visualize project progress based on status. Finally, built-in automation workflows can be configured to streamline project management tasks like auto-adding issues and setting statuses.
+To create a project, users can choose between organization or user projects, then select a template or start from scratch. 
+
+Descriptions and READMEs can be added to communicate project purpose and instructions. Issues and pull requests can be added manually or through automation. 
+
+Custom fields like iteration and priority can be created to organize and track tasks effectively. Views can be saved and shared to maintain alignment on priorities. Board layouts can be utilized to visualize project progress based on status. Finally, built-in automation workflows can be configured to streamline project management tasks like auto-adding issues and setting statuses.
 
 ### Creating a project
 1. Choose between organization or user project.
@@ -100,6 +130,98 @@ To create a project, users can choose between organization or user projects, the
 2. Edit "Auto-add to project" workflow to filter items.
 3. Enable workflow to automatically add items.
 4. Add a workflow to set status to Todo when an item is added.
+
+## ADDING ITEMS TO A PROJECT
+
+You have several options for adding issues and pull requests to your project. 
+
+> [!IMPORTANT]  
+> You can issues and pull requests to your project individually, automatically, or in bulk. 
+> When you add an issue or pull request to your project, an event will be added to the issue or pull request's timeline.
+
+
+<ins>Furthermore, you can include issues and pull requests from any organization, and you also have the ability to add draft issues that can be converted into regular issues later on.</ins>
+
+### Automatically adding issues and pull requests
+You can configure a built-in workflow to automatically add issues and pull requests from a repository when they meet specific filter criteria. 
+
+### Pasting the URL of an issue or pull request
+
+You can copy the URL of an issue or pull request into your clipboard and paste that into your project.
+
+1. Place your cursor in the bottom row of the project, next to the <kbd>+</kbd>.
+2. Paste the URL of the issue or pull request.
+3. To add the issue or pull request, press <kbd>Return</kbd>
+
+### Searching for an issue or pull request
+If you know the issue or pull request number or if you know part of the title, you can search for an issue or pull request directly from your project.
+
+1. Place your cursor in the bottom row of the project, next to the <kbd>+</kbd>.
+2. To open the list of repositories, type <kbd>#</kbd>.
+3. Select the repository where the pull request or issue is located. You can type part of the repository name to narrow down your options.
+4. Select the issue or pull request. You can type part of the title to narrow down your options.
+
+### Bulk adding issues and pull requests
+You can add multiple issues and pull requests from your project and use filters, such as `label:bug`, to narrow down your search.
+
+1. In the bottom row of the project, click <kbd>+</kbd>.
+2. Click Add item from repository.
+3. Optionally, to change the repository, click the dropdown and select a repository. You can also search for specific issues and pull requests.
+4. Select the issues and pull requests you want to add.
+5. Click **Add selected items**.
+
+
+### Adding multiple issues or pull requests from a repository
+You can also add issues and pull requests to your project from a repository's issue and pull request lists.
+
+1. On GitHub.com, navigate to the repository that contains the issues or pull requests you want to add to your project.
+2. Under your repository name, click <kbd>Issues</kbd> or <kbd>Pull requests</kbd>.
+3. Select the issues or pull requests you want to add to your project.
+    - To select individual issues or pull requests, to the left of the title of each issue or pull request you want to add to your project, select the checkbox.
+    - To select every issue or pull request on the page, at the top of the list of issues or pull requests, select all.
+4. Above the list of issues or pull requests, click <kbd>Projects</kbd>.
+5. Click the projects you want to add the selected issues or pull requests to.
+
+### Assigning a project from within an issue or pull request
+You can also add an issue or pull request to your project from within the issue or pull request itself.
+
+1. Navigate to the issue or pull request that you want to add to a project.
+2. In the side bar, click **Projects**.
+3. Select the project that you want to add the issue or pull request to.
+4. Optionally, populate the custom fields.
+
+### Using the command palette to add an issue or pull request
+You can use the command palette when viewing your project to quickly add items.
+
+1. To open the project command palette, press <kbd>Ctrl+K</kbd>
+2. Start typing "Add items" and press Return.
+3. Optionally, to change the repository, click the dropdown and select a repository. You can also search for specific issues and pull requests.
+4. Select the issues and pull requests you want to add.
+5. Click Add selected items.
+
+### Creating issues
+You can quickly create issues without leaving your project. When using a view that is grouped by a field, creating an issue in that group will automatically set the new issue's field to the group's value. For example, if you group your view by "Status", when you create an issue in the "Todo" group, the new issue's "Status" will automatically be set to "Todo."
+
+1. At the bottom of a table, group of items, or a column in board layout, click <kbd>+</kbd>.
+2. Click Create new issue.
+3. At the top of the "Create new issue" dialog, select the repository where you want the new issue to be created.
+4. Below the repository dropdown, type a title for the new issue.
+5. Optionally, use the fields below the title field to set assignees, labels, and milestones, and add the new issue to other projects.
+6. Optionally, type a description for your issue.
+7. Optionally, if you want to create more issues, select Create more and the dialog will reopen when you create your issue.
+8. Click Create.
+
+Creating draft issues
+
+Draft issues can have a title, text body, assignees, and any custom fields from your project. In order to populate the repository, labels, or milestones for a draft issue, you must first convert the draft issue to an issue. 
+
+> [!IMPORTANT]  
+> Draft issues are useful to quickly capture ideas. Unlike issues and pull requests that are referenced from your repositories, draft issues exist only in your project.
+
+1. Place your cursor in the bottom row of the project, next to the .
+2. Type your idea, then press Enter.
+3.To add body text, click on the title of the draft issue. In the markdown input box that appears, enter the text for the draft issue body, then click Save.
+
 
 ## WORKFLOWS
 
