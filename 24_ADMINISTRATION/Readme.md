@@ -37,12 +37,26 @@ When you add a collaborator (and they accept the invite) you can choose from pre
 <ins>Enterprises accounts can have custom roles</ins>
 
 ## BRANCH PROTECTION RULES
+> [!NOTE]  
+> Only repository administrators or custom roles with the "edit repository rules" permission can enable protections on a branch.
+
+If you're working on a branch that's protected, you won't be able to delete or force push to the branch. Repository administrators can additionally enable several other protected branch settings to enforce various workflows before a branch can be merged.
+
+
+> [!WARNING]  
+> You must remember for the exam that when a branch is protected:
+> - You won't be able to delete or force push to the branch.
+> - If required status checks are enabled on the branch, you won't be able to merge changes into the branch until all of the required CI tests pass.
+> - If required pull request reviews are enabled on the branch, you won't be able to merge changes into the branch until all requirements in the pull request review policy have been met.
+> - If required review from a code owner is enabled on a branch, and a pull request modifies code that has an owner, a code owner must approve the pull request before it can be merged.
+> - If required commit signing is enabled on a branch, you won't be able to push any commits to the branch that are not signed and verified. 
+> - If you use GitHub's conflict editor to fix conflicts for a pull request that you created from a protected branch, GitHub helps you to create an alternative branch for the pull request, so that your resolution of the conflicts can be merged.
+
 
 Branch protection rules are used to enforce certain workflows or requirements before changes can be merged into a branch.
 
-
 > [!IMPORTANT]  
-> **Protect matching branches rules**:
+> **Remember this are the protect matching branches rules**:
 > - Require a PR before merging
 > - Require status checks to pass before merging
 > - Require conversation resolution before merging
