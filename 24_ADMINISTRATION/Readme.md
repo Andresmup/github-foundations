@@ -43,7 +43,8 @@ To perform any actions on GitHub, such as creating a pull request in a repositor
 
 Repository-level roles give organization members, outside collaborators and teams of people varying levels of access to repositories.
 
-Team-level roles are roles that give permissions to manage a team. You can give any individual member of a team the team maintainer role, which gives the member a number of administrative permissions over a team. 
+> [!IMPORTANT]  
+> Team-level roles are roles that give permissions to manage a team. You can give any individual member of a team the **team maintainer role**, which gives the member a number of administrative permissions over a team. 
 
 Organization-level roles are sets of permissions that can be assigned to individuals or teams to manage an organization and the organization's repositories, teams, and settings. 
 
