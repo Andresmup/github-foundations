@@ -132,8 +132,18 @@ Here it's a comparison between different permissions and if a role its allow. (S
 
 ## BRANCH PROTECTION RULES
 
+You can protect important branches by setting branch protection rules, which define whether collaborators can delete or force push to the branch and set requirements for any pushes to the branch, such as passing status checks or a linear commit history.
+
 > [!NOTE]  
 > Only repository administrators or custom roles with the "edit repository rules" permission can enable protections on a branch.
+
+To ensure smooth collaboration and maintain repository integrity, branch protection rules can be set up, some aspect are:
+- **Setting Rules**: Establish rules for branches before collaborators can push changes or merge pull requests. Rules are created mainly for organizations' repositories.
+- **Default Protections**: By default, rules prevent force pushes and branch deletion. Additional protections can be enabled as needed.
+- **Exemptions**: Administrators and specific roles with "bypass branch protections" permission are exempt by default. However, these restrictions can optionally apply to them too.
+- **Customization**: Rules can be set for specific branches, all branches, or branches matching specified patterns, like release.
+- **Automated Merging**: Pull requests can be configured to merge automatically when all requirements are met.
+- **Single Rule Limitation**: Only one rule can apply at a time per branch, which may cause confusion with multiple versions targeting the same branch.
 
 If you're working on a branch that's protected, you won't be able to delete or force push to the branch. Repository administrators can additionally enable several other protected branch settings to enforce various workflows before a branch can be merged.
 
@@ -158,12 +168,78 @@ Branch protection rules are used to enforce certain workflows or requirements be
 > - Require deployments to succeed before merging
 > - Require signed commits
 > - Require linear history
+> - Require merge queue
 > - Lock branch
+> - Restrict who can push to matching branches
 > - Do not allow bypassing the above settings
 > 
 > **Rules applied to everyone including administrators**:
 > - Allow force pushes
 > - Allow deletions
+
+
+### Require pull request reviews before merging
+
+This feature allows repository administrators or specified roles to enforce a review process before merging pull requests into protected branches.
+
+It ensures code quality and collaboration by requiring a set number of approving reviews. These can come from individuals with write permissions in the repository or designated code owners.
+
+The system also handles scenarios where reviewers request changes. If a reviewer with admin permissions requests changes, they must approve the pull request before merging. If a reviewer isn't available to address requested changes, someone with write permissions can dismiss the blocking review.
+
+Even after required reviewers approve a pull request, collaborators cannot merge it if there are other open pull requests with pending or rejected reviews pointing to the same commit. This avoids merging potentially conflicting changes.
+
+### Require status checks to pass before merging
+This functionality ensures that all necessary Continuous Integration (CI) tests pass before allowing changes to be merged into protected branches.
+
+You can choose between strict and loose requirements. Strict settings mandate the branch to be up-to-date with the base branch before merging, while loose settings don't impose this requirement.
+
+Status checks can be set to accept updates from specific sources or GitHub Apps, ensuring the integrity of the build process.
+
+These checks can prevent merging incompatible changes and maintain the stability of the codebase.
+
+### Require conversation resolution before merging
+Before merging a pull request, all comments must be resolved, ensuring that every concern or feedback is addressed.
+
+This feature fosters thorough discussion and ensures that all contributors are heard before code changes are finalized.
+
+### Require deployments to succeed before merging
+Requiring successful deployments before merging ensures that changes are properly tested and deployed to specific environments before being merged into critical branches.
+
+### Require signed commits
+Enabling required commit signing ensures the authenticity and integrity of commits pushed to protected branches.
+
+Contributors must push commits with verified signatures, enhancing security and trust in the codebase.
+
+The system handles scenarios where unsigned commits are pushed, requiring contributors to rebase and include verified signatures before merging.
+
+### Require linear history
+For repositories that value a clean commit history, enforcing a linear commit history prevents merge commits on protected branches.
+
+This requirement ensures that pull requests use either squash or rebase merges, facilitating easier reverting of changes and maintaining a clear history.
+
+### Require merge queue
+
+The merge queue automates the merging of pull requests into busy branches, ensuring that all required checks pass before merging.
+
+It's particularly useful for repositories with a high volume of pull requests, streamlining the merging process and maintaining code quality.
+
+GitHub merges pull requests based on the configured merge strategy once all necessary checks are successful.
+
+### Lock branch
+Locking a branch makes it read-only, preventing any further commits or deletions. This feature is useful for preserving stable states of branches or preventing accidental changes.
+
+### Restricting Bypass
+Optionally, branch protection restrictions can be applied to admins or roles with bypass permissions, ensuring that even privileged users adhere to the established rules.
+
+### Branch Push Restrictions
+This functionality restricts push access to protected branches, allowing only specified users, teams, or apps to make changes.
+
+It can also extend to restricting branch creation, ensuring that only authorized individuals can initiate new branches.
+
+### Force Push and Deletion
+By default, force pushes and deletions are blocked on protected branches to prevent accidental or malicious modifications.
+
+However, these restrictions can be selectively enabled for specific users, teams, or all users with write permissions.
 
 ## SECURITY TAB
 In every repo the is a security tab that present a repository security checklist of security options to configure.
