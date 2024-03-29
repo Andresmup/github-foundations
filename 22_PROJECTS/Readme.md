@@ -272,9 +272,19 @@ You can also filter by the Tracked by field to display only items that are track
 
 You can delete and rename your custom fields under your repo project settings.
 
+## AUTOMATING YOUR PROJECT
+You have differents options to automate your projects.
+
+> [!WARNING]  
+> You must remember for the exam the following ones:
+> - **Using the built-in automations**: You can use built-in workflows to automate your projects.
+> - **Using the API to manage Projects**: You can use the GraphQL API to automate your projects.
+> - **Automating Projects using Actions**: You can use GitHub Actions to automate your projects.
+> - **Adding items automatically** You can configure your project's built-in workflows to automatically add items from repositories that match a filter.
+> - **Archiving items automatically**: You can configure your project's built-in workflows to automatically archive items that match a filter.
+
 
 ## WORKFLOWS
-
 Github built-in Projects Workflows allow you to automate what happens based on specific events.
 
 You can find them on the 3 dots button <kbd>***</kbd> -> <kbd>Worflows</kbd>
