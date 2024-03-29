@@ -123,7 +123,7 @@ You can use code scanning to find security vulnerabilities and errors in the cod
 
 ## CODEQL
 
-CODEQL allows you to discover vulnerabilities across a codebase with CodeQL, its industry-leading semantic code analysis engine. CodeQL lets you query code as though it were data. Write a query to find all variants of a vulnerability, eradicating it forever. Then share your query to help others do the same.
+CodeQL allows you to discover vulnerabilities across a codebase with CodeQL, its industry-leading semantic code analysis engine. CodeQL lets you query code as though it were data. Write a query to find all variants of a vulnerability, eradicating it forever. Then share your query to help others do the same.
 
 CodeQL is free for research and open source.
 
@@ -131,7 +131,7 @@ CodeQL is the code analysis engine developed by GitHub to automate security chec
 
 > [!NOTE]  
 > Remember the are three main ways to use CodeQL analysis for code scanning:
-> -Use default setup to quickly configure CodeQL analysis for code scanning on your repository. Default setup automatically chooses the languages to analyze, query suite to run, and events that trigger scans. If you prefer, you can manually select the query suite to run and languages to analyze. After you enable CodeQL, GitHub Actions will execute workflow runs to scan your code.
+> - Use default setup to quickly configure CodeQL analysis for code scanning on your repository. Default setup automatically chooses the languages to analyze, query suite to run, and events that trigger scans. If you prefer, you can manually select the query suite to run and languages to analyze. After you enable CodeQL, GitHub Actions will execute workflow runs to scan your code.
 > - Use advanced setup to add the CodeQL workflow to your repository. This generates a customizable workflow file which uses the github/codeql-action to run the CodeQL CLI.
 > - Run the CodeQL CLI directly in an external CI system and upload the results to GitHub.
 
@@ -146,7 +146,6 @@ CodeQL treats code like data, allowing you to find potential vulnerabilities in 
 CodeQL supports both compiled and interpreted languages, and can find vulnerabilities and errors in code that's written in the supported languages (C/C++, C#, Go, Java/Kotlin, JavaScript/TypeScript, Python, Ruby, Swift)
 
 ### About CodeQL queries
-
 GitHub experts, security researchers, and community contributors write and maintain the default CodeQL queries used for code scanning. The queries are regularly updated to improve analysis and reduce any false positive results.
 
 #### Writing your own queries
