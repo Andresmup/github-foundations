@@ -1,0 +1,68 @@
+name: New Content Request
+description: Request new content to be added
+title: "[Content Request]: "
+labels: ["content request"]
+assignees:
+  - andresmup
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for requesting new content!
+  - type: textarea
+    id: Details
+    attributes:
+      label: What new content are you requesting?
+      description: Provide details about the content you would like to see added.
+    validations:
+      required: true
+  - type: dropdown
+    id: Subcategory
+    attributes:
+      label: Subcategory
+      description: Select the subcategory where this new content should belong.
+      multiple: false
+      options:
+        - THE BASICS
+        - GIT AND GITHUB RELATED
+        - GITHUB CLI
+        - SSH AND TOKENS
+        - APIS AND SDKS
+        - GITHUB DESKTOP AND MOBILE
+        - GITHUB ACCOUNTS
+        - GITHUB PROFILE
+        - MARKDOWN
+        - REPOSITORIES
+        - ISSUES
+        - PULL REQUESTS
+        - FILTER SEARCH AND SORT
+        - DISCUSSIONS
+        - NOTIFICATIONS
+        - GISTS
+        - WIKI
+        - PAGES
+        - GITHUB ACTIONS
+        - COPILOT
+        - CODESPACES
+        - OPEN SOURCE
+        - PROJECTS
+        - AUTHENTICATION AND SECURITY
+        - ADMINISTRATION
+        - GITHUB ENTERPRISE
+      validations:
+        required: true
+  - type: textarea
+    id: Justification
+    attributes:
+      label: Justification for the new content
+      description: Explain why this new content is needed and how it will benefit users.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this request, you agree to follow our [Code of Conduct](https://raw.githubusercontent.com/Andresmup/github-foundations/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
