@@ -9,9 +9,9 @@ Whether you're preparing to pass the GitHub Foundations Exam or seeking to enhan
 All the notes are conveniently included within this repository, written in markdown for easy comprehension, with a focus on certification preparation.
 
 > [!TIP]
-> If you are new to GitHub and simply want to gain some knowledge about it, it will take you about 10 hours to read everything.
-> However, if you plan to take the exam and are not familiar with the topics or are new to GitHub, I suggest spending approximately 20 hours on theoretical aspects and another 10 hours on practice in order to succeed.
-> These timeframes are intended for new beginners; you may require much less time if you are already familiar with GitHub and only need to refresh some tricky topics.
+> - If you are new to GitHub and simply want to gain some knowledge about it, it will take you about 10 hours to read everything.
+> - However, if you plan to take the exam and are not familiar with the topics or are new to GitHub, I suggest spending approximately 20 hours on theoretical aspects and another 10 hours on practice in order to succeed.
+> - These timeframes are intended for new beginners; you may require much less time if you are already familiar with GitHub and only need to refresh some tricky topics.
 
 ## RECOMMENDED STUDY PATH
 
@@ -252,7 +252,7 @@ This is the brakdown that Github provides in the official study guide, every sub
 
 During my exam preparation, I chose to compile all necessary resources into this repository to centralize information. 
 
-By studying from these notes, practicing common GitHub tasks, familiarizing myself with GitHub CLI commands, and refreshing my Git skills, I successfully passed the exam. Here its my [certificate](https://www.credly.com/badges/30b06494-c73a-461c-9a96-c72cf093b947/public_url).
+By studying from these notes, practicing common GitHub tasks, familiarizing myself with GitHub CLI commands, writing and utilizing Markdown, and refreshing my Git skills, I successfully passed the exam. Here its my [certificate](https://www.credly.com/badges/30b06494-c73a-461c-9a96-c72cf093b947/public_url).
 
 
 
