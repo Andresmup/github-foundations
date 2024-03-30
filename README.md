@@ -1,10 +1,68 @@
 # GITHUB FOUNDATION STUDY GUIDE
-Repo for tracking content related to github foundation certification
+
+![Official_Study_Guide_Banner](./images/GithubFundationBadget.png)
+
+Welcome to the Full GitHub Foundations Study Guide!
+
+Whether you're preparing to pass the GitHub Foundations Exam or seeking to enhance your GitHub skills and become more familiar with the ecosystem, this repository is tailored for you.
+
+All the notes are conveniently included within this repository, written in markdown for easy comprehension, with a focus on certification preparation.
+
+> [!TIP]
+> If you are new to GitHub and simply want to gain some knowledge about it, it will take you about 10 hours to read everything.
+> However, if you plan to take the exam and are not familiar with the topics or are new to GitHub, I suggest spending approximately 20 hours on theoretical aspects and another 10 hours on practice in order to succeed.
+> These timeframes are intended for new beginners; you may require much less time if you are already familiar with GitHub and only need to refresh some tricky topics.
+
+## RECOMMENDED STUDY PATH
+
+This study guide emphasizes two key aspects in its study path:
+- Progressing from foundational to advanced content, facilitating familiarity with the GitHub ecosystem.
+- Highlighting important aspects and alerting you to potential trick questions that may appear on the exam.
+
+> [!IMPORTANT]  
+> Some of the following topics are theoretical, while others require practical application. You should feel comfortable working on GitHub and recall the steps you typically follow when performing tasks.
+
+- [THE BASICS](00_THE_BASICS)
+- [GIT AND GITHUB RELATED](01_GIT_&_GITHUB_RELATED)
+- [GITHUB CLI](02_GITHUB_CLI)
+- [SSH AND TOKENS](03_SSH_%26_TOKEN)
+- [APIS's AND SDK'S](04_API_%26_SDK)
+- [GITHUB DESKTOP AND MOBILE](05_DESKTOP_%26_MOBILE)
+- [GITHUB ACCOUNTS](06_GITHUB_ACCOUNTS)
+- [GITHUB PROFILE](07_GITHUB_PROFILE)
+- [MARKDOWN](08_MARKDOWN)
+- [REPOSITORIES](09_REPOSITORIES)
+- [ISSUES](10_ISSUES)
+- [PULL REQUESTS](11_PULL_REQUESTS)
+- [FILTER SEARCH AND SORT](12_FILTER_SEARCH_%26_SORT)
+- [DISCUSSIONS](13_DISCUSSIONS)
+- [NOTIFICATIONS](14_NOTIFICATIONS)
+- [GISTS](15_GIST)
+- [WIKI](16_WIKI)
+- [PAGES](17_PAGES)
+- [GITHUB ACTIONS](18_ACTIONS)
+- [COPILOT](19_COPILOT)
+- [CODESPACES](20_CODESPACES)
+- [OPEN SOURCE](21_OPEN_SOURCE)
+- [PROJECTS](22_PROJECTS)
+- [AUTHENTICATION AND SECURITY](23_AUTHENTICATION_%26_SECURITY)
+- [ADMINISTRATION](24_ADMINISTRATION)
+- [GITHUB ENTERPRISE](25_ENTERPRISE)
 
 
-## GITHUB EXAM DOMAIN BREAKDOWN 
+## GITHUB OFFICIAL EXAM DOMAIN BREAKDOWN 
 
-### [Domain 1: Introduction to Git and GitHub]()
+![Official_Study_Guide_Banner](./images/StudyGuideBanner.png)
+
+This is the brakdown that Github provides in the official study guide, every sub item its linked with the content related.
+
+> [!CAUTION]
+> Be careful, you should not trust on this oficial breakdown:
+> - It covers only 50-55% of the total content required for exam success.
+> - The suggested order may not align with the recommended path, as some domains contain unrelated content.
+> - In the oficial breakdown there is no space define for practice which is a importante aspect in order to be familiar with the content.
+
+### [Domain 1: Introduction to Git and GitHub](00_THE_BASICS)
 
 #### [Git and GitHub Basics](00_THE_BASICS)
 - [Describe version control](00_THE_BASICS#version-control-systems-vcs)
@@ -44,7 +102,7 @@ Repo for tracking content related to github foundation certification
 - [Describe the available features with GitHub Mobile](05_DESKTOP_%26_MOBILE#github-mobile)
 - [Explain how to manage notifications through the GitHub Mobile app](05_DESKTOP_%26_MOBILE#github-notifications)
 
-### [Domain 2: Working with GitHub Repositories]()
+### [Domain 2: Working with GitHub Repositories](09_REPOSITORIES)
 
 #### [Understanding GitHub Repositories](09_REPOSITORIES)
 
@@ -83,7 +141,7 @@ Repo for tracking content related to github foundation certification
 - [Explain the relationship of commits on a pull request](11_PULL_REQUESTS#commiting-changes-in-pr-branch-from-a-fork)
 - [Describe draft pull requests](11_PULL_REQUESTS#draft-pull-request)
 - [Describe the purpose of the pull request tabs (conversation, commits, checks, files changed](11_PULL_REQUESTS#reviewing-proposed-changes-in-a-pr)
-- Identify how to link activity within a pull request
+- [Identify how to link activity within a pull request](11_PULL_REQUESTS#milestones)
 - [Explain the different pull request statuses](11_PULL_REQUESTS#statuses)
 - [Recognize how to comment on a posted link to a line or lines of code from a file](11_PULL_REQUESTS#permanent-link-to-files)
 - [Describe code review with a codeowners file](11_PULL_REQUESTS#codeowners)
@@ -98,13 +156,13 @@ Repo for tracking content related to github foundation certification
 
 
 #### [Notifications](14_NOTIFICATIONS)
-- Describe how to manage notification subscriptions
+- [Describe how to manage notification subscriptions](14_NOTIFICATIONS#notifications-settings)
 - [Explain how to subscribe to notification threads](14_NOTIFICATIONS#managing-subscriptions)
 - [Describe how to find threads where you are at-mentioned](14_NOTIFICATIONS#find-threats-where-your-are-mentioned)
 - [Identify the notification filtering options](14_NOTIFICATIONS#custom-workflow-for-triage-notifications)
 - [Explain the different notification configuration options](14_NOTIFICATIONS#notification-configuration-options)
 
-#### [Gists, Wikis, and GitHub Pages]()
+#### [Gists, Wikis, and GitHub Pages](15_GIST)
 - [Explain how to create a GitHub gist](15_GIST#create-a-gist)
 - [Describe how to fork and clone a gist](15_GIST#fork-star-and-clone)
 - [Explain GitHub Wiki pages](16_WIKI#wiki)
@@ -135,7 +193,7 @@ Repo for tracking content related to github foundation certification
 - [Explain how to use the github.dev editor](20_CODESPACES#githubdev-editor)
 - [Explain the differences between the github.dev editor and a GitHub Codespace](20_CODESPACES#codespaces-vs-dev-editor-comparison)
 
-### [Domain 5: Project Management]()
+### [Domain 5: Project Management](22_PROJECT)
 
 #### [Manage your work with GitHub Projects](22_PROJECTS)
 - [Describe GitHub Projects](22_PROJECTS#projects)
@@ -161,17 +219,17 @@ Repo for tracking content related to github foundation certification
 - [Explain EMUs (Enterprise Managed Users)](23_AUTHENTICATION_%26_SECURITY#emus)
 
 #### [GitHub Administration](24_ADMINISTRATION)
-- Explain how to enable and disable features
+- [Explain how to enable and disable features](24_ADMINISTRATION)
 - [Recognize repository permission levels](24_ADMINISTRATION#repo-permission-levels)
 - [Identify the options for repository visibility](09_REPOSITORIES#change-repo-visibility)
-- Explain repository privacy setting options (branch protections, codeowners, required reviewers
+- [Explain repository privacy setting options (branch protections, codeowners, required reviewers)](24_ADMINISTRATION#branch-protection-rules)
 - [Describe the main features and options in the Security tab](24_ADMINISTRATION#security-tab)
 - [Define repository insights](09_REPOSITORIES#insights)
 - [Explain how to manage collaborators](24_ADMINISTRATION#managing-collaborators)
-- Explain how to manage organization settings
+- [Explain how to manage organization settings](24_ADMINISTRATION#organization-owners)
 - [Describe members, teams, and roles in a GitHub organization](23_AUTHENTICATION_%26_SECURITY#organization-roles)
 
-### [Domain 7: Benefits of the GitHub Community]()
+### [Domain 7: Benefits of the GitHub Community](21_OPEN_SOURCE)
 
 #### [Describe the benefits of the open source community](21_OPEN_SOURCE)
 - [Describe open source](21_OPEN_SOURCE#open-source)
@@ -181,10 +239,20 @@ Repo for tracking content related to github foundation certification
 - [Explain how to follow organizations (receive notifications about their activity)](21_OPEN_SOURCE#follow-organizations)
 - [Describe the GitHub Marketplace and its purpose](21_OPEN_SOURCE#marketplace)
 
-#### [Describe how to apply the benefits of open source]()
+#### [Describe how to apply the benefits of open source](21_OPEN_SOURCE)
 - [Describe InnerSource](21_OPEN_SOURCE#inner-source)
 - [Identify the differences between InnerSource and open source](21_OPEN_SOURCE#inner-source-vs-open-source-comparison)
 - [Describe forking](21_OPEN_SOURCE#forking)
 - [Describe the components of a discoverable repository](21_OPEN_SOURCE#discoverable-repos)
 - [Describe when to use issue templates](10_ISSUES#issue-templates)
 - [Describe when to use pull request templates](11_PULL_REQUESTS#templates)
+
+
+## MY EXPERIENCE
+
+During my exam preparation, I chose to compile all necessary resources into this repository to centralize information. 
+
+By studying from these notes, practicing common GitHub tasks, familiarizing myself with GitHub CLI commands, and refreshing my Git skills, I successfully passed the exam. Here its my [certificate](https://www.credly.com/badges/30b06494-c73a-461c-9a96-c72cf093b947/public_url).
+
+
+
