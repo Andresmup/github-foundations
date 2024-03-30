@@ -1,4 +1,4 @@
-# FILTER SEARCH AND SEARCH
+# FILTER SEARCH AND SORT
 
 To find detailed information about a repository on GitHub, you can filter, sort, and search issues and pull requests that are relevant to the repository. 
 
