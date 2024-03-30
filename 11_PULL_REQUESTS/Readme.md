@@ -236,3 +236,10 @@ PR templates are similar to Issues Templates. The will populate the PR request t
 Technically you create a multiple PR Template in a folder called .github/PULL_REQUEST_TEMPLATE
 
 Github kind of supports multiple PR Templates but you have to assemble your own URL with a querystring, so its not a convenient to use as multiple Issue Templates
+
+## MILESTONES
+Millestone allow you to gruop multiple Pull requests with issues into and end goal which show completitions towards the goal for each merged PR and closed issues.
+
+You can associate pull requests to milestones in the pull request page by selecting the milestone in the auxiliary panel.
+
+By linking pull requests to milestones along with issues, you can effectively track progress towards specific goals and ensure that each contribution aligns with larger project objectives. This integration provides a comprehensive view of the development process, streamlining communication and enhancing project management.
