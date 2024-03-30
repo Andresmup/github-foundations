@@ -49,7 +49,7 @@ body:
         - AUTHENTICATION AND SECURITY
         - ADMINISTRATION
         - GITHUB ENTERPRISE
-      validations:
+    validations:
         required: true
   - type: textarea
     id: Justification

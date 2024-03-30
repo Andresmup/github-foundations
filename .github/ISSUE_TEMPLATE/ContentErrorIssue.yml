@@ -22,7 +22,7 @@ body:
       label: Suggestion for Improvement
       description: |
         If you have a suggestion for correcting the content, please provide it here. Remember to include a link to documentation justifying the change.
-      validations:
+    validations:
         required: true
   - type: checkboxes
     id: terms
