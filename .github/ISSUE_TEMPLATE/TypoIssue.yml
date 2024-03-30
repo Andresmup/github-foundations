@@ -1,0 +1,48 @@
+name: Typo Issue Report
+description: Report a Typo
+title: "[Typo]: "
+labels: ["typo"]
+assignees:
+  - andresmup
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+  - type: textarea
+    id: Details
+    attributes:
+      label: Where and what is the typo?
+      description: Place a snippet of markdown code, or indicate in which folder and under where sub heading it's located
+    validations:
+      required: true
+  - type: textarea
+    id: CorrectionSuggestion
+    attributes:
+      label: Suggestion for Correction
+      description: |
+        If you have a suggestion for correcting the typo, please provide it here.
+    validations:
+        required: false
+  - type: dropdown
+    id: Frequency
+    attributes:
+      label: Frequency
+      description: |
+        How often does this typo occur?
+      multiple: false
+      options:
+        - Once
+        - Occasionally
+        - Frequently
+        - Always
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://raw.githubusercontent.com/Andresmup/github-foundations/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
