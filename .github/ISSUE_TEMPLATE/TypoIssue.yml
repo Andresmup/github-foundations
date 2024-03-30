@@ -3,7 +3,7 @@ description: Report a Typo
 title: "[Typo]: "
 labels: ["typo"]
 assignees:
-  - andresmpaws
+  - andresmup
 body:
   - type: markdown
     attributes:

@@ -3,7 +3,7 @@ description: Report a a syntax related issue
 title: "[Syntax]: "
 labels: ["syntax"]
 assignees:
-  - andresmpaws
+  - andresmup
 body:
   - type: markdown
     attributes:
